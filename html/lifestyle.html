@@ -1,0 +1,620 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+		<meta property="wb:webmaster" content="529e18c40c73d40d"> 
+		<meta property="qc:admins" content="25457126476411205636"> 
+		<meta name="keywords" content="待法 - 待着，只有少数人才懂"> 
+		<meta name="description" content="待法 - 待着，只有少数人才懂">
+		<title>待法 - 待着，只有少数人才懂</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" href="../css/based.css" />
+		<link rel="stylesheet" type="text/css" href="../css/lifestyle.css"/>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script src="../js/based.js"></script>
+		<script src="../js/jquery.SuperSlide.2.1.js"></script>
+		
+	</head> 
+	<body style="overflow-y:hidden">
+		<!--头部-->
+		<div id="hd3">
+			<div class="head clearfix">
+				<div class="h_left">
+					<a href="javascript:;">
+						<div class="newLogo"></div>
+					</a>
+					<ul class="nav">
+						<li class="btn_track">
+							<a href="../index.html">首页</a>
+						</li>
+						<li class="btn_track">
+							<a href="experience.html">体验</a>
+						</li>
+						<li class="btn_track">
+							<a href="share.html">社区</a>
+						</li>
+						<li class="btn_track">
+							<a href="status.html">状态</a>
+						</li>
+						<li class="btn_track">
+							<a href="lifestyle.html" class="on">待法</a>
+						</li>
+						<li class="client">
+							<a href="app.html" >待着客户端
+							<span class="add_two_newnew">New</span>
+							</a>
+							<div class="nav_appDown clearfix">
+								<div class="nav_appbox">
+									<div class="nav_arrow"></div>
+									<div class="nav_contentbg"></div>
+								</div>
+								<div class="nav_content">
+									<div class="nav_appicon clearfix">
+										<img src="../img/nav_appicon.png"/>
+										<P>
+											做无用之事
+											<br>
+											享受无所事事的快乐
+										</P>
+									</div>
+									<div class="nav_applink clearfix">
+										<div class="link">
+											<a href="#" style="padding: 0;">
+												<img src="../img/btn_appstore.png"/>
+											</a>
+											<a href="#" style="padding: 0;margin-top: 8px;">
+												<img src="../img/btn_appstore.png"/>
+											</a>
+										</div>
+										<div class="qrcode">
+											<img src="../img/81897d03fc0a1bb99193fb65631068b8_5_1.png" style="width: 88px;height: 88px;"/>
+											<p>扫码直接下载</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="search_box clearfix">
+					<div class="search_frame fl">
+						<form action="/search" method="GET" onsubmit="return checkHeadSearch();">
+							<div class="search_frameLeft">
+								<input type="text" class="text sear" placeholder="Search" name="k" />
+							</div>
+							<input type="" class="searBtn" id="search_in">
+						</form>
+					</div>
+					<div class="user_box2 fl">
+						<span class="notlogin">
+							<a class="fl mod_login">登录</a>
+							<div class="search_line fl"></div>
+							<a class="fl mod_regis">注册</a>
+						</span>
+						<span class="islogin">
+							<div class="search_line fl"></div>
+							<img class="head_img" src="../img/Vestman.png" alt="">
+							<span class="u_name">余家俊</span>
+							<i class="icon"></i>
+							<div class="hide_box">
+								<a href="user.html">
+									<i></i>
+									<em>个人主页</em>
+								</a>
+								<a href="message.html">
+									<i></i>
+									<em>消息中心</em>
+								</a>
+								<a href="#">
+									<i></i>
+									<em>我的体验</em>
+								</a>
+								<a href="profile.html">
+									<i></i>
+									<em>个人设置</em>
+								</a>
+								<a class="unlogin" href="javascript:;">
+									<i></i>
+									<em>退出</em>
+								</a>
+							</div>
+						</span>
+						<a class="weilauch_exper launch_exper">发起体验</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--banner开始-->
+		<div class="org_banner">
+			<div class="w1050">
+				<div class="org_banHeight"></div>
+				<div class="search">
+					<span class="note">Search</span>
+					<input type="text" class="inp text" id="search">
+					<input type="button" class="btn" id="press">
+				</div>
+				<script>
+					$('#search').focusout(function () {
+						sear($(this));
+					});
+					function sear(a) {
+						var peth_t = a.parent().find('.note');
+						if (a.val().length == 0) {
+							peth_t.show();
+						} else {
+							peth_t.hide();
+						};
+					};
+					$('.note').on('click', function () {
+						$(this).parent().find('.text').focus();
+					});
+					$('.search .text').on('focusin', function () {
+						$(this).parent().find('.note').hide();
+					});
+					
+					$(".search .inp").focusin(function(){
+						$(this).addClass("inpBor");
+					});
+					$(".search .inp").focusout(function(){
+						$(this).removeClass("inpBor");
+					});
+					$("#press").mousedown(function(){
+						var keywords=encodeURIComponent($('#search').val());
+						//alert(searchWord);
+						location.href="/lifestyle/geography/search/"+keywords+"#start";
+					});
+					$('#search').keydown(function(event){
+						if(event.keyCode == 13){
+							$('#press').mousedown();
+						}
+					});
+				</script>
+			</div>
+		</div>
+		<!--热门主题-->
+		<section class="org_block1">
+			<div class="w1050">
+				<div class="org_title">
+					<h1></h1>
+				</div>
+				<div class="org_hotList">
+					<ul class="clear">
+						<li class="bg1">
+							<a href="#" class="hotLike"></a>
+							<div class="fix" style="display: block;">
+								<h2>慢旅</h2><span>共有113个待法</span></div>
+						</li>
+						<li class="bg3">
+							<a href="#" class="hotLike"></a>
+							<div class="fix" style="display: block;">
+								<h2>面朝大海</h2><span>共有52个待法</span></div>
+						</li>
+						<li class="bg5 clmr">
+							<a href="#" class="hotLike"></a>
+							<div class="fix" style="display: block;">
+								<h2>时间与人</h2><span>共有121个待法</span></div>
+						</li>
+						<li class="bg2">
+							<a href="#" class="hotLike"></a>
+							<div class="fix" style="display: block;">
+								<h2>野奢</h2><span>共有71个待法</span></div>
+						</li>
+						<li class="bg4">
+							<a href="#" class="hotLike"></a>
+							<div class="fix" style="display: block;">
+								<h2>学点什么</h2><span>共有36个待法</span></div>
+						</li>
+						<li class="bg6 clmr">
+							<a href="#" class="hotLike"></a>
+							<div class="fix" style="display: block;">
+								<h2>运动赛事</h2><span>共有6个待法</span></div>
+						</li>
+					</ul>
+		
+				</div>
+			</div>
+		</section>
+		<script>
+			$(function(){
+				$(".org_hotList li").hover(function(){
+					$(this).find(".fix").fadeOut(600);
+				},function(){
+					$(this).find(".fix").fadeIn(600);
+				});
+			})
+		</script>	
+		<!--热门待法-->
+		<section class="org_block2">
+			<div class="w1050 clear">
+				<div class="fl left">
+					<div class="top clear">
+						<div class="fl"></div>
+					</div>
+					<div class="mainBox" id="box">
+						<div class="hd">
+							<ul>
+								<li class="">1</li>
+								<li class="">2</li>
+								<li class="on">3</li>
+								<li class="">4</li>
+							</ul>
+						</div>
+						<div class="bd">
+							<ul style="position: relative; width: 670px; height: 382px;">
+								<li class="bottom" style="position: absolute; width: 670px; left: 0px; top: 0px; display: none;">
+									<div class="fr">
+										<h3><a href="#">Moganshan Hillside Village Resort</a></h3>
+										<h4><a href="#">莫干山西坡山乡度假</a></h4>
+									</div>
+									<a href="#"><img src="../img/20150526142404876_674_314.jpg" height="314" width="674"></a>
+								</li>
+								<li class="bottom" style="position: absolute; width: 670px; left: 0px; top: 0px; display: none;">
+									<div class="fr">
+										<h3><a href="#">Tianzi Gold Orchid</a></h3>
+										<h4><a href="#">天籽金蘭</a></h4>
+									</div>
+									<a href="#"><img src="../img/20150212195301691_674_314.jpg" height="314" width="674"></a>
+								</li>
+								<li class="bottom" style="position: absolute; width: 670px; left: 0px; top: 0px; display: list-item;">
+									<div class="fr">
+										<h3><a href="#">Villavila Masva-Xichong Yuan</a></h3>
+										<h4><a href="#">墅家墨娑西冲院</a></h4>
+									</div>
+									<a href="#"><img src="../img/20150129151016810_674_314.jpg" height="314" width="674"></a>
+								</li>
+								<li class="bottom" style="position: absolute; width: 670px; left: 0px; top: 0px; display: none;">
+									<div class="fr">
+										<h3><a href="#">Kasbah Tamadot</a></h3>
+										<h4><a href="#">塔马多特堡</a></h4>
+									</div>
+									<a href="#"><img src="../img/20140828175544850_674_314.jpg" height="314" width="674"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="fr right">
+					<div class="top">
+						<div class="tit"></div>
+					</div>
+					<div class="appBox">
+						<ul class="clear">
+							<li class="li1">
+								<a href="#" class="titLink"></a>
+								<span>度假村</span>
+							</li>
+							<li class="li2 clmr">
+								<a href="#" class="titLink"></a>
+								<span>地接服务</span>
+							</li>
+							<li class="li3">
+								<a href="#" class="titLink"></a>
+								<span>协会联盟</span>
+							</li>
+							<li class="li4 clmr">
+								<a href="#" class="titLink"></a>
+								<span>料理课程</span>
+							</li>
+							<li class="li5 nobom">
+								<a href="#" class="titLink"></a>
+								<span>体育赛事服务</span>
+							</li>
+							<li class="li6 clmr nobom">
+								<a href="#" class="titLink"></a>
+								<span>文化景观</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+			jQuery(".mainBox").slide({
+					titCell:".hd ul", 
+					mainCell:".bd ul", 
+					effect:"fold",
+					delayTime:1000,
+					interTime:3000,
+					autoPlay:true, 
+					autoPage:true, 
+					trigger:"click"
+				});
+		</script>
+		
+		<!--国家列表-->
+		<section class="org_block3">
+			<div class="w1050">
+				<div class="org_title">
+					<h1></h1>
+				</div>
+			</div>
+		</section>
+		<section class="org_block4">
+			<div class="w1050" style="position:relative;">
+				<img src="../img/org_guojia.jpg" width="1050" height="259">
+				<ul class="zhouList clear">
+					<li class="z1 yahov">
+					<a href="#" class="a_link1"></a> 
+						
+					<!--亚洲链接-->
+					<span class="contin1" style="display: none;"></span>
+					</li>
+					<li class="ouhov">
+					<a href="#" class="a_link2"></a>
+					<span class="contin2" style="display: none;"></span>
+					</li>
+					<li class="dahov">
+					<a href="#" class="a_link2"></a>
+					<span class="contin3" style="display: none;"></span>
+					</li>
+					<li class="feihov">
+					<a href="#" class="a_link2"></a>
+					<span class="contin4" style="display: none;"></span>
+					</li>
+					<li class="z1 meihov">
+					<a href="#" class="a_link2"></a>
+					<span class="contin5" style="display: none;"></span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="org_block5">
+			<div class="w1050">
+				<ul class="clear countries">
+					<li class="first" style="height: 576px;">
+						<span><a href="#">阿联酋</a></span>
+						<span><a href="#">阿曼</a></span>
+						<span><a href="#">不丹</a></span>
+						<span><a href="#">菲律宾</a></span>
+						<span><a href="#">柬埔寨</a></span>
+						<span><a href="#">马尔代夫</a></span>
+						<span><a href="#">马来西亚</a></span>
+						<span><a href="#">日本</a></span>
+						<span><a href="#">斯里兰卡</a></span>
+						<span><a href="#">泰国</a></span>
+						<span><a href="#">土耳其</a></span>
+						<span><a href="#">新加坡</a></span>
+						<span><a href="#">印度</a></span>
+						<span><a href="#">印尼</a></span>
+						<span><a href="#">越南</a></span>
+						<span><a href="#">中国</a></span>		
+					</li>
+					<li class="second" style="height: 576px;">
+						<span><a href="#">奥地利</a></span>
+						<span><a href="#">比利时</a></span>
+						<span><a href="#">冰岛</a></span>
+						<span><a href="#">丹麦</a></span>
+						<span><a href="#">德国</a></span>
+						<span><a href="#">俄罗斯</a></span>
+						<span><a href="#">法国</a></span>
+						<span><a href="#">芬兰</a></span>
+						<span><a href="#">瑞士</a></span>
+						<span><a href="#">西班牙</a></span>
+						<span><a href="#">希腊</a></span>
+						<span><a href="#">意大利</a></span>
+						<span><a href="#">英国</a></span>		
+					</li>
+					<li class="three" style="height: 576px;">
+						<span><a href="#">澳大利亚</a></span>
+						<span><a href="#">斐济</a></span>
+						<span><a href="#">新西兰</a></span>		
+					</li>
+					<li class="four" style="height: 576px;">
+						<span><a href="#">博茨瓦纳</a></span>
+						<span><a href="#">肯尼亚</a></span>
+						<span><a href="#">摩洛哥</a></span>
+						<span><a href="#">南非</a></span>
+						<span><a href="#">塞舌尔</a></span>
+						<span><a href="#">坦桑尼亚</a></span>
+						<span><a href="#">赞比亚</a></span>		
+					</li>
+					<li class="last five" style="height: 576px;">
+						<span><a href="#">阿根廷</a></span>
+						<span><a href="#">厄瓜多尔</a></span>
+						<span><a href="#">哥伦比亚</a></span>
+						<span><a href="#">加拿大</a></span>
+						<span><a href="#">美国</a></span>
+						<span><a href="#">秘鲁</a></span>
+						<span><a href="#">墨西哥</a></span>
+						<span><a href="#">智利</a></span>		
+					</li>
+				</ul>
+			</div>
+		</section>
+		<script type="text/javascript">
+			$(function () {
+			//五大洲效果
+				$(".zhouList li").hover(function(){
+					$(this).find("span").show();
+				},function(){
+					$(this).find("span").hide();
+				});
+				$(".yahov").hover(function(){
+					$(".org_block5").find(".first").addClass("oneBghov");
+				},function(){
+					$(".org_block5").find(".first").removeClass("oneBghov");
+				});
+				$(".ouhov").hover(function(){
+					$(".org_block5").find(".second").addClass("oneBghov");
+				},function(){
+					$(".org_block5").find(".second").removeClass("oneBghov");
+				});
+				$(".dahov").hover(function(){
+					$(".org_block5").find(".three").addClass("oneBghov");
+				},function(){
+					$(".org_block5").find(".three").removeClass("oneBghov");
+				});
+				$(".feihov").hover(function(){
+					$(".org_block5").find(".four").addClass("oneBghov");
+				},function(){
+					$(".org_block5").find(".four").removeClass("oneBghov");
+				});
+				$(".meihov").hover(function(){
+					$(".org_block5").find(".five").addClass("oneBghov");
+				},function(){
+					$(".org_block5").find(".five").removeClass("oneBghov");
+				});
+				
+				var h = 0;
+				$(".countries li").each(function(){
+					if($(this).height() > h){
+						h = $(this).height();
+					}
+				});
+				//console.log(h);
+				$(".countries li").height(h).hover(function(){
+					$(this).addClass("oneBghov");
+				},function(){
+					$(this).removeClass("oneBghov");
+				});
+				$(".countries .first").hover(function(){
+					$(".contin1").show();
+				},function(){
+					$(".contin1").hide();
+				});
+				$(".countries .second").hover(function(){
+					$(".contin2").show();
+				},function(){
+					$(".contin2").hide();
+				});
+				$(".countries .three").hover(function(){
+					$(".contin3").show();
+				},function(){
+					$(".contin3").hide();
+				});
+				$(".countries .four").hover(function(){
+					$(".contin4").show();
+				},function(){
+					$(".contin4").hide();
+				});
+				$(".countries .five").hover(function(){
+					$(".contin5").show();
+				},function(){
+					$(".contin5").hide();
+				});
+			});
+			</script>
+		<!--回到顶部-->
+		<ul class="scoll">
+			<li class="Provide"><a href="#"></a></li>
+			<li class="Feedback"><a href="#"></a></li>
+			<li class="backToTop"></li>
+		</ul>
+		<!--模态框部分-->
+		<div class="loginpop_bottom_box">
+			<div class="bomBox">
+				<span class="foot_text"></span>
+				<a href="#" class="a_style weixin">
+					<i></i>
+					微信注册
+				</a>
+				<a href="#" class="a_style weibo">
+					<i></i>
+					微博注册
+				</a>
+				<a href="#" class="a_style qq">
+					<i></i>
+					QQ注册
+				</a>
+				<a href="#" class="a_style zc">
+					<i></i>
+					手机注册
+				</a>
+			</div>
+			<a href="javascript:;" class="close"></a>
+		</div>
+		<!--尾部-->
+		<div id="ft">
+			<ul>
+				<li>
+					<h5>
+						关于我们
+						<br>
+						<em>ABOUT　US</em>
+					</h5>
+					<p>
+						<a href="#">关于待着</a>
+					</p>
+					<p>
+						<a href="#">加入我们</a>
+					</p>
+					<p>
+						<a href="#">联系我们</a>
+					</p>
+					<p>
+						<a href="#">媒体报道</a>
+					</p>
+					<p>
+						<a href="#">商业合作</a>
+					</p>
+					<p>
+						<a href="#">Cooperation</a>
+					</p>
+				</li>
+				<li>
+					<h5>
+						帮助中心
+						<br>
+						<em>HELP</em>
+					</h5>
+					<p>
+						<a href="#">玩转待着</a>
+					</p>
+					<p>
+						<a href="#">建议反馈</a>
+					</p>
+					<p>
+						<a href="#">申请认证</a>
+					</p>
+				</li>
+				<li>
+					<h5>
+						关于体验
+						<br>
+						<em>EXPERIENCE</em>
+					</h5>
+					<p>
+						<a href="#">为何免费</a>
+					</p>
+					<p>
+						<a href="#">是否有黑幕</a>
+					</p>
+					<p>
+						<a href="#">何为体验官</a>
+					</p>
+					<p>
+						<a href="#">体验官如何产生</a>
+					</p>
+					<p>
+						<a href="#">商业合作</a>
+					</p>
+					<p>
+						<a href="#">活动视频</a>
+					</p>
+				</li>
+				<li>
+					<h5>
+						网站条款
+						<br>
+						<em>SITE TERMS</em>
+					</h5>
+					<p>
+						<a href="#">会员条款</a>
+					</p>
+					<p>
+						<a href="#">版权声明</a>
+					</p>
+				</li>
+				<li class="last">
+					<a href="#" class="sina">待着公众微博</a>
+					<a href="#" class="weixin">待着公众微信</a>
+					<img src="../img/daizhe_code_n.png"/>
+				</li>
+			</ul>
+			<p class="copyright">
+				copyright 2014 daizhe.cn All right reserved
+				<a href="#">京ICP备102157719号-5</a>
+			</p>
+		</div>
+	</body>
+</html>

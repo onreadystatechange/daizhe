@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>消息列表</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/based.css">
+	<link rel="stylesheet" href="../css/profile.css">
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/based.js"></script>
+	<script src="../js/profile.js"></script>
+	<script src="../js/YMDClass.js"></script>
+</head>
+<body>
+	<!--头部-->
+	<div id="hd3">
+		<div class="head clearfix">
+			<div class="h_left">
+				<a href="/">
+					<div class="newLogo"></div>
+				</a>
+				<ul class="nav">
+					<li class="btn_track">
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="btn_track">
+						<a href="experience.html">体验</a>
+					</li>
+					<li class="btn_track">
+						<a href="share.html">社区</a>
+					</li>
+					<li class="btn_track">
+						<a href="status.html">状态</a>
+					</li>
+					<li class="btn_track">
+						<a href="lifestyle.html">待法</a>
+					</li>
+					<li class="client">
+						<a href="app.html">待着客户端
+						<span class="add_two_newnew">New</span>
+						</a>
+						<div class="nav_appDown clearfix">
+							<div class="nav_appbox">
+								<div class="nav_arrow"></div>
+								<div class="nav_contentbg"></div>
+							</div>
+							<div class="nav_content">
+								<div class="nav_appicon clearfix">
+									<img src="../img/nav_appicon.png"/>
+									<P>
+										做无用之事
+										<br>
+										享受无所事事的快乐
+									</P>
+								</div>
+								<div class="nav_applink clearfix">
+									<div class="link">
+										<a href="#" style="padding: 0;">
+											<img src="../img/btn_appstore.png"/>
+										</a>
+										<a href="#" style="padding: 0;margin-top: 8px;">
+											<img src="../img/btn_appstore.png"/>
+										</a>
+									</div>
+									<div class="qrcode">
+										<img src="../img/81897d03fc0a1bb99193fb65631068b8_5_1.png" style="width: 88px;height: 88px;"/>
+										<p>扫码直接下载</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="search_box clearfix">
+				<div class="search_frame fl">
+					<form action="/search" method="GET" onsubmit="return checkHeadSearch();">
+						<div class="search_frameLeft">
+							<input type="text" class="text sear" placeholder="Search" name="k" />
+						</div>
+						<input type="" class="searBtn" id="search_in">
+					</form>
+				</div>
+				<div class="user_box2 fl">
+					<span class="notlogin">
+						<a class="fl mod_login">登录</a>
+						<div class="search_line fl"></div>
+						<a class="fl mod_regis">注册</a>
+					</span>
+					<span class="islogin">
+						<div class="search_line fl"></div>
+						<img class="head_img" src="../img/Vestman.png" alt="">
+						<span class="u_name">余家俊</span>
+						<i class="icon"></i>
+						<div class="hide_box">
+							<a href="user.html">
+								<i></i>
+								<em>个人主页</em>
+							</a>
+							<a href="message.html">
+								<i></i>
+								<em>消息中心</em>
+							</a>
+							<a href="#">
+								<i></i>
+								<em>我的体验</em>
+							</a>
+							<a href="profile.html">
+								<i></i>
+								<em>个人设置</em>
+							</a>
+							<a class="unlogin" href="javascript:;">
+								<i></i>
+								<em>退出</em>
+							</a>
+						</div>
+					</span>
+					<a class="weilauch_exper launch_exper">发起体验</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--内容-->
+	<div class="container">
+		<div class="main clearfix">
+			<div class="main_left">
+				<h3 class="main_head">
+					<i></i>
+					个人设置
+				</h3>
+				<div class="main_inner">
+					<ul class="main_nav">
+						<li class="nav_list show"><a href="javascript:;">基本资料</a>&nbsp;&nbsp;&nbsp;丨&nbsp;&nbsp;&nbsp;</li>
+						<li class="nav_list"><a href="javascript:;">修改密码</a></li>
+						<li class="nav_list">&nbsp;&nbsp;&nbsp;丨&nbsp;&nbsp;&nbsp;<a href="javascript:;">账号绑定</a></li>
+					</ul>
+					<div class="user_info show">
+						<dl>
+							<dt>UID：</dt>
+							<dd>
+								<span class="c">
+									<input type="text" value="190112" disabled="disabled">
+								</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>邮箱：</dt>
+							<dd>
+								<span class="c">
+									<span class="show_mail">未绑定</span>
+									<a href="javascript:;" class="add_mail">立即绑定</a>
+								</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>手机：</dt>
+							<dd>
+								<span class="c">
+									<input type="text" value="18009278310" disabled="disabled">
+									<a href="javascript:;" class="change_phone">修改</a>
+								</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>昵称：</dt>
+							<dd>
+								<span class="c">
+									<input class="user_name" type="text" value="余家俊">
+									<i></i>
+									<span class="warning"></span>
+								</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>头像：</dt>
+							<dd>
+								<div class="head_img clearfix">
+									<img src="../img/Vestman.png" alt="">
+								</div>
+								<div class="get_img">
+									<input class="input_hide" type="file">
+									选择图片
+								</div>
+								<div class="remind">支持jpg,gif,png格式，建议尺寸大于100*100。</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>性别：</dt>
+							<dd>
+								<div class="input_wrapper">
+									<input type="radio" checked="checked" name="gender_radio">男
+									<input type="radio" name="gender_radio">女
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>出生日期：</dt>
+							<dd>
+								<div class="birth_select">
+									<select name="year1"></select>
+									<select name="month1"></select>
+									<select name="day1"></select>
+									<script>
+										new YMDselect('year1','month1','day1');
+									</script>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>职业：</dt>
+							<dd>
+								<span class="c">
+									<input class="add_job" type="text" placeholder="您是做什么工作的呢">
+								</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>所在城市：</dt>
+							<dd>
+								<select class="city_choose" name="" id="">
+									<option value="">请选择省份</option>
+									<option value="110000">北京市</option>
+									<option value="120000">天津市</option>
+									<option value="130000">河北省</option>
+									<option value="140000">山西省</option>
+									<option value="150000">内蒙古自治区</option>
+									<option value="210000">辽宁省</option>
+									<option value="220000">吉林省</option>
+									<option value="230000">黑龙江省</option>
+									<option value="310000">上海市</option>
+									<option value="320000">江苏省</option>
+									<option value="330000">浙江省</option>
+									<option value="340000">安徽省</option>
+									<option value="350000">福建省</option>
+									<option value="360000">江西省</option>
+									<option value="370000">山东省</option>
+									<option value="410000">河南省</option>
+									<option value="420000">湖北省</option>
+									<option value="430000">湖南省</option>
+									<option value="440000">广东省</option>
+									<option value="450000">广西壮族自治区</option>
+									<option value="460000">海南省</option>
+									<option value="500000">重庆市</option>
+									<option value="510000">四川省</option>
+									<option value="520000">贵州省</option>
+									<option value="530000">云南省</option>
+									<option value="540000">西藏自治区</option>
+									<option value="610000">陕西省</option>
+									<option value="620000">甘肃省</option>
+									<option value="630000">青海省</option>
+									<option value="640000">宁夏回族自治区</option>
+									<option value="650000">新疆维吾尔自治区</option>
+									<option value="710000">台湾省</option>
+									<option value="810000">香港特别行政区</option>
+									<option value="820000">澳门特别行政区</option>
+									<option value="910000">海外</option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt>个人签名：</dt>
+							<dd>
+								<span class="c">
+									<input class="my_sugg" type="text" placeholder="写下您对待着的想法，最多25个字符">
+								</span>
+							</dd>
+						</dl>
+						<span class="sub">保存</span>
+					</div> 
+					<div class="modify_psw">
+						<dl class="psw_now">
+							<dt>当前密码：</dt>
+							<dd>
+								<input type="password">
+								<i></i>
+								<span></span>
+							</dd>
+						</dl>
+						<dl class="psw_now">
+							<dt>&nbsp;&nbsp;&nbsp;新密码：</dt>
+							<dd>
+								<input type="password">
+								<i></i>
+								<span></span>
+							</dd>
+						</dl>
+						<dl class="psw_now">
+							<dt>确认密码：</dt>
+							<dd>
+								<input type="password">
+								<i></i>
+								<span></span>
+							</dd>
+						</dl>
+						<span class="save_change">保存</span>
+					</div>
+					<div class="account">
+						<p>将你在待着的动态同步到社交网站，与朋友们分享</p>
+						<dl class="clearfix">
+							<dt><i class="icon1"></i></dt>
+							<dd>
+								你的豆瓣账号：未绑定
+								<div class="cleak"><a href="javascript:;">立即绑定</a></div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt><i class="icon2"></i></dt>
+							<dd>
+								你的豆瓣账号：未绑定
+								<div class="cleak"><a href="javascript:;">立即绑定</a></div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt><i class="icon3"></i></dt>
+							<dd>
+								你的豆瓣账号：未绑定
+								<div class="cleak"><a href="javascript:;">立即绑定</a></div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt><i class="icon4"></i></dt>
+							<dd>
+								你的豆瓣账号：未绑定
+								<div class="cleak"><a href="javascript:;">立即绑定</a></div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="main_right">
+				<p class="info_msg">您的资料已完善：<span>50%</span></p>
+				<div class="outer">
+					<div class="inner">50</div>
+				</div>
+				<p class="info_warning">以下资料还未完善：</p>
+				<span class="info">邮箱尚未绑定</span>
+				<span class="info">出生日期</span>
+				<span class="info">职业</span>
+				<span class="info">个性签名</span>
+			</div>
+		</div>
+	</div>
+	<!--回到顶部-->
+	<ul class="scoll">
+		<li class="Provide"><a href="#"></a></li>
+		<li class="Feedback"><a href="#"></a></li>
+		<li class="backToTop"></li>
+	</ul>
+	<!--模态框部分-->
+	<div class="loginpop_bottom_box">
+		<div class="bomBox">
+			<span class="foot_text"></span>
+			<a href="#" class="a_style weixin">
+				<i></i>
+				微信注册
+			</a>
+			<a href="#" class="a_style weibo">
+				<i></i>
+				微博注册
+			</a>
+			<a href="#" class="a_style qq">
+				<i></i>
+				QQ注册
+			</a>
+			<a href="#" class="a_style zc">
+				<i></i>
+				手机注册
+			</a>
+		</div>
+		<a href="javascript:;" class="close"></a>
+	</div>
+	<!--尾部-->
+	<div id="ft">
+		<ul>
+			<li>
+				<h5>
+					关于我们
+					<br>
+					<em>ABOUT　US</em>
+				</h5>
+				<p>
+					<a href="#">关于待着</a>
+				</p>
+				<p>
+					<a href="#">加入我们</a>
+				</p>
+				<p>
+					<a href="#">联系我们</a>
+				</p>
+				<p>
+					<a href="#">媒体报道</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">Cooperation</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					帮助中心
+					<br>
+					<em>HELP</em>
+				</h5>
+				<p>
+					<a href="#">玩转待着</a>
+				</p>
+				<p>
+					<a href="#">建议反馈</a>
+				</p>
+				<p>
+					<a href="#">申请认证</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					关于体验
+					<br>
+					<em>EXPERIENCE</em>
+				</h5>
+				<p>
+					<a href="#">为何免费</a>
+				</p>
+				<p>
+					<a href="#">是否有黑幕</a>
+				</p>
+				<p>
+					<a href="#">何为体验官</a>
+				</p>
+				<p>
+					<a href="#">体验官如何产生</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">活动视频</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					网站条款
+					<br>
+					<em>SITE TERMS</em>
+				</h5>
+				<p>
+					<a href="#">会员条款</a>
+				</p>
+				<p>
+					<a href="#">版权声明</a>
+				</p>
+			</li>
+			<li class="last">
+				<a href="#" class="sina">待着公众微博</a>
+				<a href="#" class="weixin">待着公众微信</a>
+				<img src="../img/daizhe_code_n.png"/>
+			</li>
+		</ul>
+		<p class="copyright">
+			copyright 2014 daizhe.cn All right reserved
+			<a href="#">京ICP备102157719号-5</a>
+		</p>
+	</div>
+</body>
+</html>

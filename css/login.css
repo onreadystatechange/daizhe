@@ -1,0 +1,552 @@
+/*回到顶部*/
+.Provide {
+    border-top: 1px solid #9b9b9b;
+    background: url(../img/returnTop.png) -199px 0px no-repeat;
+    width: 60px;
+    height: 59px;
+    position: fixed;
+    z-index: 99999;
+    right: 50px;
+    bottom: 76px;
+    cursor: pointer;
+}
+.Provide:hover {
+    background: url(../img/returnTop.png) -199px -66px no-repeat;
+}
+.Feedback {
+    border-top: 1px solid #9b9b9b;
+    background: url(../img/returnTop.png) -67px 0px no-repeat;
+    width: 60px;
+    height: 59px;
+    position: fixed;
+    z-index: 99999;
+    right: 50px;
+    bottom: 136px;
+    cursor: pointer;
+}
+.scoll{
+    display: none;
+}
+.Feedback:hover{
+    background: url(../img/returnTop.png) -67px -66px no-repeat;
+}
+.backToTop {
+    background: url(../img/returnTop.png) no-repeat;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 19;
+    right: 50px;
+    bottom: 196px;
+    cursor: pointer;
+
+}
+.backToTop:hover{
+    background: url(../img/returnTop.png) 0 -66px no-repeat;
+}
+/*头部*/
+#hd3 {
+    width: 100%;
+    background: #111;
+    height: 50px;
+    min-width: 1150px;
+    position: relative;
+    z-index: 99999;
+}
+.clearfix:before, .clearfix:after {
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+#hd3 .head .h_left {
+    margin-left: 50px;
+    float: left;
+    width: 720px;
+}
+#hd3 .head .newLogo {
+    width: 135px;
+    height: 27px;
+    background: url(../img/logo2.png) no-repeat;
+    position: absolute;
+    top: 12px;
+    left: 50px;
+}
+#hd3 .nav {
+    position: relative;
+    float: left;
+    margin-left: 164px;
+    height: 50px;
+}
+#hd3 .nav li {
+    float: left;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+    font-family: "微软雅黑";
+}
+#hd3 .nav li a {
+    color: #fff;
+    display: inline-block;
+    padding: 25px 21px 0;
+    height: 36px;
+    text-shadow: 2px 2px 2px #010101;
+}
+#hd3 .nav li a:hover {
+    color: #03aeba;
+
+}
+.add_two_newnew {
+    width: 21px;
+    height: 8px;
+    color: #ff5b54;
+    position: absolute;
+    top: 19px;
+    right: -2px;
+    font-size: 9px;
+}
+/*right*/
+.fl {
+    float: left;
+}
+#hd3 .search_box {
+    padding-top: 14px;
+    position: absolute;
+    right: 50px;
+}
+#hd3 .search_frame {
+    position: relative;
+    width: 222px;
+}
+#hd3 .search_frame .search_frameLeft {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 0px;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    float: right;
+}
+
+#hd3 .search_frame .sear {
+    list-style-type: none;
+    border: 0;
+    font-weight: normal;
+    border-radius: 2px;
+    width: 202px;
+    height: 26px;
+    padding-top: 1px;
+    color: #fff;
+    padding-left: 10px;
+    background: /*url(../img/search_searbg.png)*/ #2f2f2f;
+}
+#hd3 .search_frame .searBtn {
+    width: 16px;
+    height: 16px;
+    background: url(../img/searBtn.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 22px;
+    top: 5px;
+    list-style-type: none;
+    border: 0;
+    font-weight: normal;
+}
+#hd3 .search_box .mod_login{
+    font-size:13px;
+    display: inline-block;
+    color: #a0a0a0;
+    margin:4px 13px 0px 13px;
+}
+#hd3 .search_line{
+    width: 1px;
+    height: 26px;
+    background: #3d3d3d;
+    margin-top:1px;
+}
+#hd3 .search_box .mod_regis{
+    font-size:13px;
+    color: #a0a0a0;
+    display: inline-block;
+    margin:4px 0px 0px 13px;
+}
+#hd3 .search_box .launch_exper{
+    color: #fff;
+    font-size:14px;
+    background: #03aeba;
+    width: 110px;
+    height:25px;
+    line-height:25px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+}
+/*尾部*/
+#ft{
+    background: url(../img/ft_bg.png);
+    padding-bottom:45px;
+    min-width: 1150px;
+}
+#ft ul{
+    width:830px;
+    margin:0 auto;
+    padding: 60px 0 0;
+}
+#ft li{
+    width:180px;
+    float: left;
+}
+#ft ul h5{
+    color: #50c8d7;
+    font-size: 15px;
+    padding:0 0 16px 20px;
+}
+#ft ul p{
+    font-size: 14px;
+    line-height: 24px;
+}
+#ft ul p a{
+    background: url(../img/hf_bg.png) left -19px no-repeat;
+    display: inline-block;
+    padding-left: 20px;
+    color: #818181;
+}
+#ft ul .last{
+    width: 110px;
+}
+#ft ul .last a{
+    display: block;
+    padding:0 0 0 26px;
+    height: 24px;
+    line-height: 24px;
+    color: #818181;
+}
+#ft ul .last .sina{
+    background: url(../img/sina_icon.png) left center no-repeat;
+}
+#ft ul .last .weixin{
+    background: url(../img/weixin_icon.png)left center no-repeat;
+}
+#ft .copyright{
+    display: block;
+    clear: both;
+    text-align: center;
+    color: #818181;
+    font-size: 14px;
+    padding-top: 60px;
+    font-family: Tahoma;
+}
+#ft .copyright a{
+    color: #818181;
+    font-size: 14px;
+}
+#ft .copyright a{
+    color: #818181;
+    font-size: 14px;
+}
+#ft .copyright a:hover{
+    color: #50c8d7;
+    text-decoration: underline;
+}
+/*模态框*/
+.loginpop_bottom_box{
+    display: block;
+    height: 70px;
+    width:100%;
+    z-index:20;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    background: rgba(0,0,0,0.7) ;
+}
+.loginpop_bottom_box .bomBox {
+    width: 950px;
+    margin: 0px auto;
+}
+.loginpop_bottom_box .bomBox .foot_text {
+    display: inline-block;
+    width: 333px;
+    height: 23px;
+    background: url(../img/foot_text.png) no-repeat;
+    margin: 24px 26px 0px 0px;
+}
+.loginpop_bottom_box .bomBox .a_style {
+    font-size: 15px;
+    color: #fff;
+    line-height: 34px;
+    text-align: center;
+    width: 138px;
+    height: 34px;
+    display: inline-block;
+    margin: 0px 5px 0px 0px;
+    position: relative;
+    top: -5px;
+}
+.loginpop_bottom_box .bomBox .weixin{
+    background: #a0cd4e;
+}
+.loginpop_bottom_box .bomBox .weibo{
+    background: #e1443f;
+}
+.loginpop_bottom_box .bomBox .qq{
+    background: #4195cc;
+}
+.loginpop_bottom_box .bomBox .zc{
+    background: #fcb616;
+}
+.loginpop_bottom_box .bomBox .weixin i {
+    position: relative;
+    top: 4px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 25px;
+    height: 19px;
+    background: url(../img/login_three.png) no-repeat;
+}
+.loginpop_bottom_box .close {
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: fixed;
+    bottom: 26px;
+    right: 28px;
+    background: url(../img/foot_icos.png) 0px -127px no-repeat;
+}
+/*二维码*/
+
+.nav_appDown{
+    position:absolute;
+    left:-88px;
+    top:50px;
+    width:0;
+    height:0;
+    padding:0;
+    color:#fff;
+    display:none;
+}
+.nav_appDown .nav_appbox{
+    width:0;
+    height:0;
+    position:relative;
+}
+.nav_appDown .nav_appbox .nav_arrow{
+    position:absolute;
+    left:130px;
+    top:-10px;
+    width:0;
+    height:0;
+    border:10px solid transparent;
+    border-bottom-color: #000;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    opacity:0.8;
+}
+.nav_appDown .nav_appbox .nav_contentbg{
+    position:absolute;
+    top:10px;
+    width:270px;
+    height:260px;
+    background:#000;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    opacity:0.8;
+}
+.nav_appDown .nav_content{
+    position:absolute;
+    top:40px;
+    left:20px;
+    width:230px;
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    opacity:1;
+}
+.nav_appDown .nav_content .nav_appicon{
+    padding-bottom:20px;
+    border-bottom:1px solid #5b5b5b;
+}
+.nav_appDown .nav_content .nav_appicon img{
+    float:left;
+    margin-right:15px;
+}
+.nav_appDown .nav_content .nav_appicon p{
+    float:left;
+    width:150px;
+    line-height:18px;
+    padding-top:23px;
+}
+.nav_appDown .nav_content .nav_applink{
+    padding-top:20px;
+}
+.nav_appDown .nav_content .nav_applink .link{
+    float:left;
+    width:142px;
+}
+.nav_appDown .nav_content .nav_applink .qrcode{
+    float:left;
+    width:88px;
+    text-align:center;
+}
+/*登录部分*/
+.bgf7 {
+    background: #fff;
+    min-width: 1150px;
+}.invCode {
+     padding-top: 88px;
+     padding-bottom: 50px;
+     height: 620px;
+     padding-bottom: 85px;
+     width: 850px;
+ }
+.apply_a {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #707070;
+}
+.web_login_box {
+    width: 630px;
+    height: 540px;
+    margin: 0px auto;
+    background: #f5f5f5;
+    border-radius: 10px;
+    position: relative;
+}
+.web_login_box h1 {
+    font-size: 26px;
+    color: #363636;
+    padding: 45px 0px 10px 260px;
+}
+.webpageLog .link_box {
+    text-align: center;
+    overflow: hidden;
+}
+.web_login_box .link_box .aclick {
+    display: inline-block;
+    width: 60px;
+    height: 65px;
+    margin: 0 9px;
+    background: url(../img/log3_fox.png)no-repeat;
+    margin-top: 18px;
+}
+.web_login_box .link_box .a1 {
+    background: url(../img/log3_fox.png)no-repeat;
+}
+.web_login_box .link_box .a2 {
+    background-position: 0px -75px;
+}
+.web_login_box .link_box .a3{
+    background-position: 0px -155px;
+}
+.web_login_box .link_box .a4{
+    background-position: 0px -238px;
+}
+.web_login_box .link_box p {
+    font-size: 13px;
+    padding-top: 12px;
+    color: #707070;
+}
+.web_login_box .huo {
+    width: 293px;
+    height: 28px;
+    background: url(../img/huo.png) no-repeat;
+    margin: 20px 0px 0px 167px;
+}
+.web_login_box .mail {
+    background: #f5f5f5;
+    height: 196px;
+    padding-left: 0px;
+    overflow: hidden;
+    margin: 30px 0px 0px 172px;
+}
+.web_login_box .mail .log1 {
+    position: relative;
+    margin-bottom: 9px;
+}
+.web_login_box .mail .log2 {
+    position: relative;
+    margin-bottom: 9px;
+}
+.web_login_box .mail .logBtn {
+    background: #fcb616;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #ad3c25;
+    width: 288px;
+    height: 32px;
+    line-height: 25px;
+    border: 1px solid #dba658;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.web_login_box .mail .log3 {
+    color: #555;
+    margin-top: 12px;
+    font-size: 12px;
+}
+.goZuce {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    font-size: 12px;
+}
+.goZuce a{
+    color: #50c8d7;
+}
+.web_login_box .mail .log1 .ico1 {
+    width: 17px;
+    height: 12px;
+    background: url(../img/log_ico.png) no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+.web_login_box .mail .text {
+    width: 245px;
+    padding-left: 40px;
+    height: 32px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    border-radius: 5px;
+}
+.web_login_box .mail .error {
+    display: none;
+    font-size: 13px;
+    color: #ff6e68;
+    position: absolute;
+    top: 8px;
+    left: 40px;
+}
+.web_login_box .mail .log2 .ico2 {
+    width: 17px;
+    height: 18px;
+    background: url(../img/log_ico.png) 0px -17px no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+}
+.webpageLog .mail .errorImg {
+    width: 18px;
+    height: 19px;
+    display: inline-block;
+    background: url(../img/log_ico.png) 0px -41px;
+    position: absolute;
+    left: 260px;
+    top: 8px;
+    display: none;
+}
+

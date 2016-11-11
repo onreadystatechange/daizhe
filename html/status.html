@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta property="wb:webmaster" content="529e18c40c73d40d" />
+	<meta property="qc:admins" content="25457126476411205636" />
+	<meta name="keywords" content="免费体验,顶级生活方式,养生度假,健康度假" />
+	<meta name="description" content="待着（daizhe.cn）为你推荐遍布全球最新鲜，最与众不同的顶级生活方式，还有不间断的免费体验机会，让你亲身感受，与兴趣相投的人们在此分享。" />
+	<title>状态 - 待着，只有少数人才懂 - 待着网</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/based.css" />
+	<link rel="stylesheet" type="text/css" href="../css/samestate.css">
+	<link rel="stylesheet" type="text/css" href="../css/status.css">
+	<script src="../js/jquery-1.11.3.js" type="text/javascript"></script>
+	<script src="../js/based.js"></script>
+</head>
+<body>
+	<!--头部-->
+	<div id="hd3">
+		<div class="head clearfix">
+			<div class="h_left">
+				<a href="javascript:;">
+					<div class="newLogo"></div>
+				</a>
+				<ul class="nav">
+					<li class="btn_track">
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="btn_track">
+						<a href="experience.html">体验</a>
+					</li>
+					<li class="btn_track">
+						<a href="share.html">社区</a>
+					</li>
+					<li class="btn_track">
+						<a href="status.html">状态</a>
+					</li>
+					<li class="btn_track">
+						<a href="lifestyle.html">待法</a>
+					</li>
+					<li class="client">
+						<a href="app.html">待着客户端
+						<span class="add_two_newnew">New</span>
+						</a>
+						<div class="nav_appDown clearfix">
+							<div class="nav_appbox">
+								<div class="nav_arrow"></div>
+								<div class="nav_contentbg"></div>
+							</div>
+							<div class="nav_content">
+								<div class="nav_appicon clearfix">
+									<img src="../img/nav_appicon.png"/>
+									<P>
+										做无用之事
+										<br>
+										享受无所事事的快乐
+									</P>
+								</div>
+								<div class="nav_applink clearfix">
+									<div class="link">
+										<a href="#" style="padding: 0;">
+											<img src="../img/btn_appstore.png"/>
+										</a>
+										<a href="#" style="padding: 0;margin-top: 8px;">
+											<img src="../img/btn_appstore.png"/>
+										</a>
+									</div>
+									<div class="qrcode">
+										<img src="../img/81897d03fc0a1bb99193fb65631068b8_5_1.png" style="width: 88px;height: 88px;"/>
+										<p>扫码直接下载</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="search_box clearfix">
+				<div class="search_frame fl">
+					<form action="/search" method="GET" onsubmit="return checkHeadSearch();">
+						<div class="search_frameLeft">
+							<input type="text" class="text sear" placeholder="Search" name="k" />
+						</div>
+						<input type="" class="searBtn" id="search_in">
+					</form>
+				</div>
+				<div class="user_box2 fl" style="width: 212px">
+					<span class="notlogin" style="display:block;">
+						<a class="fl mod_login">登录</a>
+						<div class="search_line fl"></div>
+						<a class="fl mod_regis">注册</a>
+					</span>
+					<a class="weilauch_exper launch_exper">发起体验</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 内容 -->
+	<div class="loginpop_box" id="loginpop" style="">
+		<div class="close"></div>
+		<div class="loginpop_container" id="loginpop_container">
+			<div class="userLogin">
+				<h1>用户登录</h1>
+			</div>
+			<div class="link_box">
+				<a href="#" class="aclick douban"></a>
+				<a href="#" class="aclick weibo"></a>
+				<a href="#" class="aclick qq"></a>
+				<a href="#" class="aclick weixin"></a>
+				<p>使用社交网络帐号登录</p>
+			</div>
+			<div class="huoBox">
+				<div class="huo"></div>
+			</div>
+			<!-- 邮箱登录 -->
+			<div class="mail_log" id="loginpop_box_email">
+				<input type="hidden" name="invitationpop_form_return_url">
+				<div class="log1">
+					<span class="ico1"></span>
+					<span class="note" style="">邮箱或手机</span>
+					<span class="error" id="loginpop_form_loginname_error">邮箱或手机不能为空</span>
+					<span class="errorImg" style="display: none;"></span>
+					<input type="text" class="text pwerror" id="loginpop_form_loginname"style="border: 1px solid rgb(220, 220, 220);">
+				</div>
+				<div class="log2">
+					<span class="ico2"></span>
+					<span class="note" style="">密码</span>
+					<span class="error" id="loginpop_form_password_error">密码不能为空</span>
+					<span class="errorImg" style="display: none;"></span>
+					<input type="password" class="text pwerror" id="loginpop_form_password"style="border: 1px solid rgb(220, 220, 220);">
+				</div>
+				<input type="submit" id="loginpop_form_submit" class="logBtn" value="登录">
+				<div class="log3">
+					<label>
+						<input type="checkbox" id="loginpop_form_rememberme" checked="checked">记住我
+					</label>
+					<a href="#">忘记密码？</a>
+				</div>
+				<div class="log4">
+					还没有账号？
+					<a href="#">注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="loginpop_mask"></div>
+	<!-- 以上是头部 -->
+	<section id="bodyBg">
+		<div class="w1000">
+			<article class="clearfix fillExper">
+				<article class="fl fill_left">
+					<!-- 我要参与发布框 -->
+					<div class="fillExper_left2 borStyle">
+						<div class="release">
+							<div class="clearfix">
+								<a href="javascript:;" class="fl">
+									<img src="../img/default_face.png" class="headImg">
+								</a>
+								<h3 class="fl">
+									<span class="s_tit"></span>
+								</h3>
+							</div>
+							<!-- 发布框 -->
+							<div class="postingBox" style="position:relative;height:100px;">
+								<textarea class="textarea status_1" placeholder="分享现在的状态..."></textarea>
+								<div class="clearfix" style="position:absolute;right:0px;bottom:0px;">
+									<input type="button" class="fr input" id="submitStatus1" value="发布">
+									<script type="text/javascript">
+										$(function(){
+											$("#submitStatus1").bind('click',function(){
+												var login_uid = "";
+												if(login_uid == ''|| login_uid==0){
+													loginPop("http://www.daizhe.cn/status/index/category/1");return false;
+												}else{
+													$("#submitStatus2").click();
+												}
+											});
+										});
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hight15"></div>
+					<div class="fillExper_left2 borStyle" id="onceGo">
+						<div class="ex_line"></div>
+						<!-- 全部状态 -->
+						<div class="allStatusTit clearfix">
+							<a href="#" class="cur">随便看看</a>
+							<a href="#">好友状态</a>
+						</div>
+						<ul class="commentTag clearfix">
+							<li class="cur">
+								<a href="#">最新</a>
+							</li>
+							<li>
+								<a href="#">热门</a>
+							</li>
+						</ul>
+						<div id="listLoopArea" class="publishMain">
+							<!-- 评论 无图 -->
+							<div class="comment_noImg statusContext floatingDel" id="">
+								<!-- comment_imgBg -->
+								<div class="clearfix topHead">
+									<div class="fl clearfix">
+										<div class="fl leftheadImg">
+											<a href="#" class="headImg_a" target="_blank">
+												<img src="../img/0.jpg" class="fl headImg">
+											</a>
+											<!-- 个人信息浮动框 -->
+											<div class="model_imgFloat">
+												<span class="f_san"></span>
+												<h4>
+													<a href="#" target="_blank" class="name">玻尔克索斯</a>
+												</h4>
+												<p>TA的签名还在环游世界  过两天就来</p>
+												<div class="likeMe like_163671">
+													<a href="javascript:;" class="attention">
+														<i></i>关注
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="fr">
+											<a href="#" class="name" target="_blank">玻尔克索斯</a>
+										</div>
+									</div>
+									<span class="fr time">1小时前</span>
+								</div>
+								<div class="com_text">
+									<p>不管怎样，这就是命，你根本无法反抗，只能忍受痛苦</p>
+								</div>
+								<div class="bom_box clearfix">
+									<div class="fr icos">
+										<span class="i2">
+											<i class="jx_heart"></i>
+											<em class="jx_iLike">1</em>
+										</span>
+										<span class="i3 jx_comment">
+											<i></i>
+											<em>0</em>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- 喜欢列表 -->
+							<div class="iLike_box clearfix">
+								<span class="san"></span>
+								<ul></ul>
+							</div>
+							<!-- 评论展开 -->
+							<div class="model_comments">
+								<span class="model_san"></span>
+								<div class="clearfix inputTxt">
+									<textarea class="w_input fl"></textarea>
+									<input type="hidden">
+									<input type="hidden">
+									<input type="button" class="fl txtBtn commentSubmit" value="评论">
+								</div>
+								<ul class="com_list clearfix"></ul>
+								<div class="moreMeg cBlue"></div>
+								<div class="shou putAway">
+									<i></i>
+								</div>
+							</div>
+							<!-- 评论有图 -->
+							<div class="comment_yesImg comment_imgBg statusContext floatingDel moreImg_things" id="">
+								<!-- comment_imgBg -->
+								<div class="clearfix topHead">
+									<div class="fl clearfix">
+										<div class="fl leftheadImg">
+											<a href="#" class="headImg_a" target="_blank">
+												<img src="../img/20150607131819534_100_100.jpg" class="fl headImg">
+											</a>
+											<!-- 个人信息浮动框 -->
+											<div class="model_imgFloat">
+												<span class="f_san"></span>
+												<h4>
+													<a href="#" target="_blank" class="name">玊玊w</a>
+												</h4>
+												<p>-我想有座房子，面朝大海，四季如春</p>
+												<div class="likeMe like_163671">
+													<a href="javascript:;" class="attention">
+														<i></i>关注
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="fr">
+											<a href="#" class="name" target="_blank">玊玊w</a>
+										</div>
+									</div>
+									<span class="fr time">11小时前</span>
+								</div>
+								<div class="moreImg_text">
+									<p>宋冬野宋冬野宋冬野。</p>
+								</div>
+								<div class="moreImg_pics moreImg_pics1 clearfix">
+									<ul>
+										<li>
+											<a href="../img/20161014232607192.png" data-lightbox="group_72928">
+												<img id="" data-src="../img/20161014232607192.png" src="../img/20161014232607192.png" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="bom_box clearfix">
+									<div class="fr icos">
+										<span class="i2">
+											<i class="jx_heart"></i>
+											<em class="jx_iLike">1</em>
+										</span>
+										<span class="i3 jx_comment">
+											<i></i>
+											<em>0</em>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- 喜欢列表 -->
+							<div class="iLike_box clearfix">
+								<span class="san"></span>
+								<ul></ul>
+							</div>
+							<!-- 评论展开 -->
+							<div class="model_comments">
+								<span class="model_san"></span>
+								<div class="clearfix inputTxt">
+									<textarea class="w_input fl"></textarea>
+									<input type="hidden">
+									<input type="hidden">
+									<input type="button" class="fl txtBtn commentSubmit" value="评论">
+								</div>
+								<ul class="com_list clearfix"></ul>
+								<div class="moreMeg cBlue"></div>
+								<div class="shou putAway">
+									<i></i>
+								</div>
+							</div>
+							
+
+							<!-- 评论 无图 -->
+							<div class="comment_noImg statusContext floatingDel" id="">
+								<!-- comment_imgBg -->
+								<div class="clearfix topHead">
+									<div class="fl clearfix">
+										<div class="fl leftheadImg">
+											<a href="#" class="headImg_a" target="_blank">
+												<img src="../img/123sd.jpg" class="fl headImg">
+											</a>
+											<!-- 个人信息浮动框 -->
+											<div class="model_imgFloat">
+												<span class="f_san"></span>
+												<h4>
+													<a href="#" target="_blank" class="name">too late</a>
+												</h4>
+												<p>想去多伦多</p>
+												<div class="likeMe like_163671">
+													<a href="javascript:;" class="attention">
+														<i></i>关注
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="fr">
+											<a href="#" class="name" target="_blank">too late</a>
+										</div>
+									</div>
+									<span class="fr time">23小时前</span>
+								</div>
+								<div class="com_text">
+									<p>感觉对不起曾经那个骄傲的自己</p>
+								</div>
+								<div class="bom_box clearfix">
+									<div class="fr icos">
+										<span class="i2">
+											<i class="jx_heart"></i>
+											<em class="jx_iLike">0</em>
+										</span>
+										<span class="i3 jx_comment">
+											<i></i>
+											<em>0</em>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- 喜欢列表 -->
+							<div class="iLike_box clearfix">
+								<span class="san"></span>
+								<ul></ul>
+							</div>
+							<!-- 评论展开 -->
+							<div class="model_comments">
+								<span class="model_san"></span>
+								<div class="clearfix inputTxt">
+									<textarea class="w_input fl"></textarea>
+									<input type="hidden">
+									<input type="hidden">
+									<input type="button" class="fl txtBtn commentSubmit" value="评论">
+								</div>
+								<ul class="com_list clearfix"></ul>
+								<div class="moreMeg cBlue"></div>
+								<div class="shou putAway">
+									<i></i>
+								</div>
+							</div>
+
+
+							<!-- 评论有图 -->
+							<div class="comment_yesImg comment_imgBg statusContext floatingDel moreImg_things" id="statusData_72915">
+								<!-- comment_imgBg -->
+								<div class="clearfix topHead">
+									<div class="fl clearfix">
+										<div class="fl leftheadImg">
+											<a href="#" class="headImg_a" target="_blank">
+												<img src="../img/20161011164153947_100_100.png" class="fl headImg">
+											</a>
+											<!-- 个人信息浮动框 -->
+											<div class="model_imgFloat">
+												<span class="f_san"></span>
+												<h4>
+													<a href="#" target="_blank" class="name">微微凉</a>
+												</h4>
+												<p>谁言秋意寒萧瑟，吾道早秋微微凉。</p>
+												<div class="likeMe like_163671">
+													<a href="javascript:;" class="attention">
+														<i></i>关注
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="fr">
+											<a href="#" class="name" target="_blank">微微凉</a>
+										</div>
+									</div>
+									<span class="fr time">2天前</span>
+								</div>
+								<div class="moreImg_text">
+									<p>我想认识一个南京人，充满原汁原味的南京腔。</p>
+								</div>
+								<div class="moreImg_pics moreImg_pics1 clearfix">
+									<ul>
+										<li>
+											<a href="../img/20161013080928662.jpg" data-lightbox="group_72915">
+												<img id="statusData_72915_0" data-src="../img/20161013080928662.jpg" src="../img/20161013080928662.jpg" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="bom_box clearfix">
+									<div class="fr icos">
+										<span class="i2">
+											<i class="jx_heart"></i>
+											<em class="jx_iLike">1</em>
+										</span>
+										<span class="i3 jx_comment">
+											<i></i>
+											<em>0</em>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- 喜欢列表 -->
+							<div class="iLike_box clearfix">
+								<span class="san"></span>
+								<ul></ul>
+							</div>
+							<!-- 评论展开 -->
+							<div class="model_comments" id="commentBox_9_72915">
+								<span class="model_san"></span>
+								<div class="clearfix inputTxt">
+									<textarea class="w_input fl"></textarea>
+									<input type="hidden">
+									<input type="hidden">
+									<input type="button" class="fl txtBtn commentSubmit" value="评论">
+								</div>
+								<ul class="com_list clearfix" id="commentListBox_9_72915"></ul>
+								<div class="moreMeg cBlue" id="commentBtnMore_9_72915"></div>
+								<div class="shou putAway">
+									<i></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pages">
+						<div class="pages pagesu">
+							<div id="yw0" class="pages">
+								<a class="hidden" href="#">&lt;&lt;</a>
+								<a class="hidden" href="#">&lt;</a>
+								<a class="on" href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+								<a href="#">7</a>
+								<a href="#">8</a>
+								<a href="#">9</a>
+								<a href="#">10</a>
+								<a href="#">&gt;</a>
+								<a href="#">&gt;&gt;</a>
+							</div>
+						</div>
+					</div>
+						
+				</article>
+				<article class="fr fill_right">
+					<!-- 为你推荐 -->
+					<div class="exper_Officer borStyle">
+						<!-- 热门标签 -->
+						<div class="newUser">
+							<h1>热门标签</h1>
+							<div class="status_hotTag">
+								<a href="/status/tag/id/160">待着</a>
+								<a href="/status/tag/id/651">生活</a>
+								<a href="/status/tag/id/3834">乐观</a>
+								<a href="/status/tag/id/2265">体验陌生人的一天</a>
+								<a href="/status/tag/id/37">摄影</a>
+								<a href="/status/tag/id/3528">手艺</a>
+								<a href="/status/tag/id/681">手作</a>
+								<a href="/status/tag/id/68">旅行</a>
+							</div>
+						</div>
+						<!-- 广告位 -->
+						<div class="status_advert"></div>
+						<h1>活跃用户</h1>
+						<ul class="offficerList">
+							<li class="clearfix rightheadImg">
+								<a href="#" target="_blank" class="fl">
+									<img src="../img/20140625184025656_100_100.png" class="headImg">
+								</a>
+								<div class="fl nameBox">
+									<a href="#" target="_blank" class="nameO" data-cnt="87">daizher</a>
+									<a href="#" class="model_title model_t5 communityTitle" target="_blank">
+										<i class="showName">
+											<span class="name">官方</span>
+											<span class="g_san"></span>
+										</i>
+									</a>
+									<div class="sign">解答待萌的任何疑问</div>
+								</div>
+								<!-- 个人信息浮动框 -->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+										<a href="#" class="name">daizher</a>
+										<a href="#" class="model_title model_t5 communityTitle" target="_blank">
+											<i class="showName">
+												<span class="name">官方</span>
+											<span class="g_san"></span>
+											</i>
+										</a>
+									</h4>
+									<p>解答待萌的任何疑问</p>
+									<div class="likeMe like_1">
+										<a href="javascript:;" class="attention" data-uid="1" data-followta="0" data-followme="0">
+											<i></i>关注
+										</a>
+									</div>
+								</div>
+							</li>
+
+							<li class="clearfix rightheadImg">
+								<a href="#" target="_blank" class="fl">
+									<img src="../img/20161009021942906_100_100.png" class="headImg">
+								</a>
+								<div class="fl nameBox">
+									<a href="#" target="_blank" class="nameO" data-cnt="87">半个地球外还有个你</a>
+									<div class="sign">学生</div>
+								</div>
+								<!-- 个人信息浮动框 -->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+										<a href="#" class="name">半个地球外还有个你</a>
+									</h4>
+									<p> 总有一天你会站在最高的地方活成自己曾经渴望的模样</p>
+									<div class="likeMe like_1">
+										<a href="javascript:;" class="attention" data-uid="1" data-followta="0" data-followme="0">
+											<i></i>关注
+										</a>
+									</div>
+								</div>
+							</li>
+
+							<li class="clearfix rightheadImg">
+								<a href="#" target="_blank" class="fl">
+									<img src="../img/20150607131819534_100_100.jpg" class="headImg">
+								</a>
+								<div class="fl nameBox">
+									<a href="#" target="_blank" class="nameO" data-cnt="87">玊玊w</a>
+									<div class="sign">学生</div>
+								</div>
+								<!-- 个人信息浮动框 -->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+										<a href="#" class="name">玊玊w</a>
+									</h4>
+									<p>-我想有座房子，面朝大海，四季如春</p>
+									<div class="likeMe like_1">
+										<a href="javascript:;" class="attention" data-uid="1" data-followta="0" data-followme="0">
+											<i></i>关注
+										</a>
+									</div>
+								</div>
+							</li>
+
+							<li class="clearfix rightheadImg">
+								<a href="#" target="_blank" class="fl">
+									<img src="../img/20160920210321307_100_100.png" class="headImg">
+								</a>
+								<div class="fl nameBox">
+									<a href="#" target="_blank" class="nameO" data-cnt="87">画扇</a>
+									<div class="sign">不自由工作者</div>
+								</div>
+								<!-- 个人信息浮动框 -->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+										<a href="#" class="name">画扇</a>
+									</h4>
+									<p>上善若水</p>
+									<div class="likeMe like_1">
+										<a href="javascript:;" class="attention" data-uid="1" data-followta="0" data-followme="0">
+											<i></i>关注
+										</a>
+									</div>
+								</div>
+							</li>
+
+							<li class="clearfix rightheadImg">
+								<a href="#" target="_blank" class="fl">
+									<img src="../img/100.jpg" class="headImg">
+								</a>
+								<div class="fl nameBox">
+									<a href="#" target="_blank" class="nameO" data-cnt="87">_Skies•</a>
+									<div class="sign">自由职业者</div>
+								</div>
+								<!-- 个人信息浮动框 -->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+										<a href="#" class="name">_Skies•</a>
+									</h4>
+									<p>TA的签名还在环游世界  过两天就来</p>
+									<div class="likeMe like_1">
+										<a href="javascript:;" class="attention" data-uid="1" data-followta="0" data-followme="0">
+											<i></i>关注
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</article>
+		</div>
+	</section>
+	<!-- <div class="lightboxOverlay" id="lightboxOverlay"></div>
+	<div class="lightbox" id="lightbox" style="display: none; top: 1150px; left: 0px;">
+		<div class="lb-outerContainer">
+			<div class="lb-closeContainer" style="display: block; width: 721px;">
+				<a href="javascript:;" class="lb-close"></a>
+			</div>
+			<div class="lb-container">
+				<img src="../img/20161014232607192.png" alt="lb-image" style="display: block; width: 713px; height: 1233px;">
+				<div class="lb-nav" style="display: block;">
+					<a href="javascript:;" class="lb-prev" style="display: none; width: 561.44px;"></a>
+					<a href="javascript:;" class="lb-next" style="display: none; width: 561.44px;"></a>
+				</div>
+				<div class="lb-loader" style="display: none;">
+					<a href="javascript:;" class="lb-cancel"></a>
+				</div>
+				<div class="lb-dataContainer" style="display: block; width: 721px;">
+					<div class="lb-data">
+						<span class="lb-caption"></span>
+						<span class="lb-number"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- somecode... -->
+	<!--回到顶部-->
+	<ul class="scoll">
+		<li class="Provide"><a href="#"></a></li>
+		<li class="Feedback"><a href="#"></a></li>
+		<li class="backToTop"></li>
+	</ul>
+	<!--模态框部分-->
+	<div class="loginpop_bottom_box">
+		<div class="bomBox">
+			<span class="foot_text"></span>
+			<a href="#" class="a_style weixin">
+				<i></i>
+				微信注册
+			</a>
+			<a href="#" class="a_style weibo">
+				<i></i>
+				微博注册
+			</a>
+			<a href="#" class="a_style qq">
+				<i></i>
+				QQ注册
+			</a>
+			<a href="#" class="a_style zc">
+				<i></i>
+				手机注册
+			</a>
+		</div>
+		<a href="javascript:;" class="close"></a>
+	</div>
+	<!--尾部-->
+	<div id="ft">
+		<ul>
+			<li>
+				<h5>
+					关于我们
+					<br>
+					<em>ABOUT　US</em>
+				</h5>
+				<p>
+					<a href="#">关于待着</a>
+				</p>
+				<p>
+					<a href="#">加入我们</a>
+				</p>
+				<p>
+					<a href="#">联系我们</a>
+				</p>
+				<p>
+					<a href="#">媒体报道</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">Cooperation</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					帮助中心
+					<br>
+					<em>HELP</em>
+				</h5>
+				<p>
+					<a href="#">玩转待着</a>
+				</p>
+				<p>
+					<a href="#">建议反馈</a>
+				</p>
+				<p>
+					<a href="#">申请认证</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					关于体验
+					<br>
+					<em>EXPERIENCE</em>
+				</h5>
+				<p>
+					<a href="#">为何免费</a>
+				</p>
+				<p>
+					<a href="#">是否有黑幕</a>
+				</p>
+				<p>
+					<a href="#">何为体验官</a>
+				</p>
+				<p>
+					<a href="#">体验官如何产生</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">活动视频</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					网站条款
+					<br>
+					<em>SITE TERMS</em>
+				</h5>
+				<p>
+					<a href="#">会员条款</a>
+				</p>
+				<p>
+					<a href="#">版权声明</a>
+				</p>
+			</li>
+			<li class="last">
+				<a href="#" class="sina">待着公众微博</a>
+				<a href="#" class="weixin">待着公众微信</a>
+				<img src="../img/daizhe_code_n.png"/>
+			</li>
+		</ul>
+		<p class="copyright">
+			copyright 2014 daizhe.cn All right reserved
+			<a href="#">京ICP备102157719号-5</a>
+		</p>
+	</div>
+	<script src="../js/dynamic.js" type="text/javascript"></script>
+	<script src="../js/status.js" type="text/javascript"></script>
+</body>
+</html>

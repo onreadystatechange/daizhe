@@ -1,0 +1,67 @@
+html,body {
+    width: 100%;
+}
+.w1150 {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.w1150 .appDown {
+    position: relative;
+    width: 100%;
+    height: 738px;
+    background: url(../img/appDown_page.png);
+}
+.appDown-info {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+.appDown-info .fl {
+    float: left;
+}
+.left_down>div {
+    float: left;
+    margin-right: 15px;
+}
+.left_down .r1 a:nth-child(1){
+    display: block;
+    margin-bottom: 15px;
+}
+.left_down .r2 {
+    font-size: 14px;
+    text-align: center;
+    color: #888
+}
+.left_down .r2 img {
+    width: 111px;
+    height: 111px;
+}
+.right_down {
+    padding: 30px 0 0 18px;
+    border-left: 1px solid #ccc;
+}
+.right_down p {
+    padding-bottom:13px;
+    color: #888;
+
+}
+.right_down a{
+    display: inline-block;
+    margin-right: 8px;
+    width: 44px;
+    height: 44px;
+    background: url(../img/contact.png);
+}
+.right_down a:nth-child(2){
+    background-position:0 0  ;
+}
+.right_down a:nth-child(3){
+    background-position: -48px 0;
+}
+.right_down a:nth-child(4){
+    background-position: -97px 0 ;
+}
+.right_down a:nth-child(5){
+    background-position: -146px 0;
+}

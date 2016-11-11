@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人主页</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/user.css">
+	<link rel="stylesheet" href="../css/based.css" />
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/based.js"></script>
+	<script src="../js/user.js"></script>
+</head>
+<body>
+	<!--头部-->
+	<div id="hd3">
+		<div class="head clearfix">
+			<div class="h_left">
+				<a href="javascript:;">
+					<div class="newLogo"></div>
+				</a>
+				<ul class="nav">
+					<li class="btn_track">
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="btn_track">
+						<a href="experience.html">体验</a>
+					</li>
+					<li class="btn_track">
+						<a href="share.html">社区</a>
+					</li>
+					<li class="btn_track">
+						<a href="status.html">状态</a>
+					</li>
+					<li class="btn_track">
+						<a href="lifestyle.html">待法</a>
+					</li>
+					<li class="client">
+						<a href="app.html">待着客户端
+						<span class="add_two_newnew">New</span>
+						</a>
+						<div class="nav_appDown clearfix">
+							<div class="nav_appbox">
+								<div class="nav_arrow"></div>
+								<div class="nav_contentbg"></div>
+							</div>
+							<div class="nav_content">
+								<div class="nav_appicon clearfix">
+									<img src="../img/nav_appicon.png"/>
+									<P>
+										做无用之事
+										<br>
+										享受无所事事的快乐
+									</P>
+								</div>
+								<div class="nav_applink clearfix">
+									<div class="link">
+										<a href="#" style="padding: 0;">
+											<img src="../img/btn_appstore.png"/>
+										</a>
+										<a href="#" style="padding: 0;margin-top: 8px;">
+											<img src="../img/btn_appstore.png"/>
+										</a>
+									</div>
+									<div class="qrcode">
+										<img src="../img/81897d03fc0a1bb99193fb65631068b8_5_1.png" style="width: 88px;height: 88px;"/>
+										<p>扫码直接下载</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="search_box clearfix">
+				<div class="search_frame fl">
+					<form action="/search" method="GET" onsubmit="return checkHeadSearch();">
+						<div class="search_frameLeft">
+							<input type="text" class="text sear" placeholder="Search" name="k" />
+						</div>
+						<input type="" class="searBtn" id="search_in">
+					</form>
+				</div>
+				<div class="user_box2 fl">
+					<span class="notlogin">
+						<a class="fl mod_login">登录</a>
+						<div class="search_line fl"></div>
+						<a class="fl mod_regis">注册</a>
+					</span>
+					<span class="islogin">
+						<div class="search_line fl"></div>
+						<img class="head_img" src="../img/Vestman.png" alt="">
+						<span class="u_name">余家俊</span>
+						<i class="icon"></i>
+						<div class="hide_box">
+							<a href="user.html">
+								<i></i>
+								<em>个人主页</em>
+							</a>
+							<a href="message.html">
+								<i></i>
+								<em>消息中心</em>
+							</a>
+							<a href="#">
+								<i></i>
+								<em>我的体验</em>
+							</a>
+							<a href="profile.html">
+								<i></i>
+								<em>个人设置</em>
+							</a>
+							<a class="unlogin" href="javascript:;">
+								<i></i>
+								<em>退出</em>
+							</a>
+						</div>
+					</span>
+					<a class="weilauch_exper launch_exper">发起体验</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--内容-->
+	<div class="container">
+		<div class="inner">
+			<div class="user-info">
+				<div class="head-img">
+					<a href="javascript:;"><img style="" src="../img/Vestman.png" alt=""></a>
+				</div>
+				<h3 class="user-name">余家俊</h3>
+				<p class="user-word">TA的签名还在环游世界 过两天就来</p>
+			</div>
+			<div class="ads-user">
+				<a href="javascript:;"><img src="../img/20151218160804261.jpg" alt=""></a>
+			</div>
+			<div class="pre_main clearfix">
+				<div class="fl main_left">
+					<div class="release-wrapper">
+						<div class="release">
+							<div class="status">
+								<span class="status_1">
+									<a href="javascript:;">
+										<i class="r1"></i>
+										发布状态
+									</a>
+								</span>
+								<span class="status_2">
+									<a href="javascript:;">
+										<i class="r3"></i>
+										发布帖子
+									</a>
+								</span>
+							</div>
+							<div class="postingBox">
+								<textarea name="" id="" cols="30" rows="10" placeholder="分享现在的状态..."></textarea>
+								<div class="clearfix">
+									<input type="button" class="fr input" value="发布">
+								</div>
+							</div>
+							<div class="postingBox2">
+								<div class="posting-inner">
+									<textarea name="" id="" cols="30" rows="10" placeholder="此时此刻，你在如何待着？①待着鼓励你：记录自己美好生活的片刻；②分享新发现，告诉大家好好待着的方法。③待着不欢迎：广告、违法内容、与“待着生活方式”无关的内容。"></textarea>
+								</div>
+								<textarea name="" id="" cols="30" rows="10" placeholder="多个标签用空格分隔，最多3个"></textarea>
+								<input class="file" type="file">
+								<div class="load-img">
+									<i class="load-img-i"></i>
+									<span>照片</span>
+								</div>
+								<div class="load-mv">
+									<i class="load-mv-i"></i>
+									<span>视频</span>
+								</div>
+								<div class="hide-box">
+									<span class="hide-arrow"></span>
+									<textarea name="" id="" cols="30" rows="10" placeholder="http://"></textarea>
+									<div class="hotTag">
+										<input type="button" value="确定">
+										<a href="javascript:;">取消</a>
+										暂时不支持新浪视频和乐视
+									</div>
+								</div>
+								<div class="clearfix">
+									<input type="button" class="fr input" value="发布">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main_leftConcrete">
+						<div class="menu">
+							<a href="javascript:;" class="on">首页</a>
+							<a href="javascript:;">状态</a>
+							<a href="javascript:;">体验</a>
+							<a href="javascript:;">帖子</a>
+							<a href="javascript:;">喜欢</a>
+						</div>
+					</div>
+					<div class="publishMain index show">	<!-- 数据 -->
+						<section class="modelInfo clearfix">
+							<div class="modelInfo-left">
+								<a href="javascript:;">
+									<img src="../img/20140625184025656_100_100.png" alt="">
+								</a>
+							</div>
+							<div class="modelInfo-right">
+								<h3>
+									<a href="javascript:;">daizher</a>发布了一个状态
+									<time>2015-12-23</time>
+								</h3>
+								<div class="box clearfix">
+									<div class="text">
+										<p class="p-t">
+											<i></i>对于很多人来说，五百万似乎遥不可及。但是钱真的不是最重要的，有的人有钱也没法做自己想做的事情，有的人没钱却依旧可以勇敢的向前。待着希望所有的人，都能不忘初心。此话题获奖用户是@参差 @是最遥远的星星啊 @法沙 @小艹先森か @大脚 ，请尽快私信daizher你的联系方式哦，我们也会电话联系你，请留意哦~
+											<i></i></p>
+										<div class="perAdd_tags"></div>
+										<div class="biaoqian"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="modelInfo clearfix">
+							<div class="modelInfo-left">
+								<a href="javascript:;">
+									<img src="../img/20140625184025656_100_100.png" alt="">
+								</a>
+							</div>
+							<div class="modelInfo-right">
+								<h3>
+									<a href="javascript:;">daizher</a>发布了一个状态
+									<time>2015-12-23</time>
+								</h3>
+								<div class="box clearfix">
+									<div class="text">
+										<p class="p-t">
+											<i></i>对于很多人来说，五百万似乎遥不可及。但是钱真的不是最重要的，有的人有钱也没法做自己想做的事情，有的人没钱却依旧可以勇敢的向前。待着希望所有的人，都能不忘初心。此话题获奖用户是@参差 @是最遥远的星星啊 @法沙 @小艹先森か @大脚 ，请尽快私信daizher你的联系方式哦，我们也会电话联系你，请留意哦~
+											<i></i></p>
+										<div class="perAdd_tags"></div>
+										<div class="biaoqian"></div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="publishMain status">
+						<p>发布的状态<span>共0个</span></p>
+					</div>
+					<div class="publishMain exp">
+						<div class="exp_head">
+							<a class="active" href="javascript:;">
+								免费体验
+								(<span>0</span>)
+								<i></i>
+							</a>
+							<a href="javascript:;">
+								发起的体验
+								(<span>0</span>)
+							</a>
+							<a href="javascript:;">
+								体验愿望
+								(<span>0</span>)
+							</a>
+						</div>
+					</div>
+					<div class="publishMain tie">
+						<p>发布的帖子<span>共0个</span></p>
+					</div>
+					<div class="publishMain hobby">
+						<div class="hobby_head">
+							<span class="like">我喜欢的</span>
+							<span class="tie show">帖子(<span>0</span>)</span>
+							<span class="idea">待法(<span>0</span>)</span>
+						</div>
+					</div>
+				</div>
+				<div class="fr main_right">
+					<h1>关于<i>我</i></h1>
+					<div class="block1">
+						<p>未知<a href="javascript:;">编辑</a></p>
+						<p>地球，中国</p>
+					</div>
+					<div class="line_ge"></div>
+					<div class="block2">
+						<p>我的标签<a href="javascript:;">添加</a></p>
+						<p>请填写你的专属标签</p>
+					</div>
+					<div class="line_ge"></div>
+					<div class="block3">
+						<p>个人简介<a href="javascript:;">添加</a></p>
+						<p>请填写你的个人简介</p>
+					</div>
+					<div class="line_ge"></div>
+					<div class="fansBox">
+						<div class="clearfix fans">
+							<div class="attention">
+								<a href="javascript:;"></a>
+								<span>1</span>
+								<em>关注</em>
+							</div>
+							<ul class="imgList"></ul>
+						</div>
+						<div class="clearfix fans">
+							<div class="attention">
+								<a href="javascript:;"></a>
+								<span>0</span>
+								<em>粉丝</em>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--回到顶部-->
+	<ul class="scoll">
+		<li class="Provide"><a href="#"></a></li>
+		<li class="Feedback"><a href="#"></a></li>
+		<li class="backToTop"></li>
+	</ul>
+	<!--模态框部分-->
+	<div class="loginpop_bottom_box">
+		<div class="bomBox">
+			<span class="foot_text"></span>
+			<a href="#" class="a_style weixin">
+				<i></i>
+				微信注册
+			</a>
+			<a href="#" class="a_style weibo">
+				<i></i>
+				微博注册
+			</a>
+			<a href="#" class="a_style qq">
+				<i></i>
+				QQ注册
+			</a>
+			<a href="#" class="a_style zc">
+				<i></i>
+				手机注册
+			</a>
+		</div>
+		<a href="javascript:;" class="close"></a>
+	</div>
+	<!--尾部-->
+	<div id="ft">
+		<ul>
+			<li>
+				<h5>
+					关于我们
+					<br>
+					<em>ABOUT　US</em>
+				</h5>
+				<p>
+					<a href="#">关于待着</a>
+				</p>
+				<p>
+					<a href="#">加入我们</a>
+				</p>
+				<p>
+					<a href="#">联系我们</a>
+				</p>
+				<p>
+					<a href="#">媒体报道</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">Cooperation</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					帮助中心
+					<br>
+					<em>HELP</em>
+				</h5>
+				<p>
+					<a href="#">玩转待着</a>
+				</p>
+				<p>
+					<a href="#">建议反馈</a>
+				</p>
+				<p>
+					<a href="#">申请认证</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					关于体验
+					<br>
+					<em>EXPERIENCE</em>
+				</h5>
+				<p>
+					<a href="#">为何免费</a>
+				</p>
+				<p>
+					<a href="#">是否有黑幕</a>
+				</p>
+				<p>
+					<a href="#">何为体验官</a>
+				</p>
+				<p>
+					<a href="#">体验官如何产生</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">活动视频</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					网站条款
+					<br>
+					<em>SITE TERMS</em>
+				</h5>
+				<p>
+					<a href="#">会员条款</a>
+				</p>
+				<p>
+					<a href="#">版权声明</a>
+				</p>
+			</li>
+			<li class="last">
+				<a href="#" class="sina">待着公众微博</a>
+				<a href="#" class="weixin">待着公众微信</a>
+				<img src="../img/daizhe_code_n.png"/>
+			</li>
+		</ul>
+		<p class="copyright">
+			copyright 2014 daizhe.cn All right reserved
+			<a href="#">京ICP备102157719号-5</a>
+		</p>
+	</div>
+</body>
+</html>

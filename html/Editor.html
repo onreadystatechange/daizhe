@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>发布新帖</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/share.css" />
+		<link rel="stylesheet" href="../css/based.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="../js/based.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="hd3">
+			<div class="head clearfix">
+				<div class="h_left">
+					<a href="javascript:;">
+						<div class="newLogo"></div>
+					</a>
+					<ul class="nav">
+						<li class="btn_track">
+							<a href="../index.html">首页</a>
+						</li>
+						<li class="btn_track">
+							<a href="experience.html">体验</a>
+						</li>
+						<li class="btn_track">
+							<a href="share.html" class="on">社区</a>
+						</li>
+						<li class="btn_track">
+							<a href="status.html">状态</a>
+						</li>
+						<li class="btn_track">
+							<a href="lifestyle.html">待法</a>
+						</li>
+						<li class="client">
+							<a href="app.html">待着客户端
+							<span class="add_two_newnew">New</span>
+							</a>
+							<div class="nav_appDown clearfix">
+								<div class="nav_appbox">
+									<div class="nav_arrow"></div>
+									<div class="nav_contentbg"></div>
+								</div>
+								<div class="nav_content">
+									<div class="nav_appicon clearfix">
+										<img src="../img/nav_appicon.png"/>
+										<P>
+											做无用之事
+											<br>
+											享受无所事事的快乐
+										</P>
+									</div>
+									<div class="nav_applink clearfix">
+										<div class="link">
+											<a href="#" style="padding: 0;">
+												<img src="../img/btn_appstore.png"/>
+											</a>
+											<a href="#" style="padding: 0;margin-top: 8px;">
+												<img src="../img/btn_appstore.png"/>
+											</a>
+										</div>
+										<div class="qrcode">
+											<img src="../img/81897d03fc0a1bb99193fb65631068b8_5_1.png" style="width: 88px;height: 88px;"/>
+											<p>扫码直接下载</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="search_box clearfix">
+					<div class="search_frame fl">
+						<form action="/search" method="GET" onsubmit="return checkHeadSearch();">
+							<div class="search_frameLeft">
+								<input type="text" class="text sear" placeholder="Search" name="k" />
+							</div>
+							<input type="" class="searBtn" id="search_in">
+						</form>
+					</div>
+					<div class="user_box2 fl">
+						<span class="notlogin">
+							<a href="login.html" class="fl mod_login">登录</a>
+							<div class="search_line fl"></div>
+							<a href="register.html" class="fl mod_regis">注册</a>
+						</span>
+						<span class="islogin">
+							<div class="search_line fl"></div>
+							<img class="head_img" src="../img/Vestman.png" alt="">
+							<span class="u_name">余家俊</span>
+							<i class="icon"></i>
+							<div class="hide_box">
+								<a href="user.html">
+									<i></i>
+									<em>个人主页</em>
+								</a>
+								<a href="message.html">
+									<i></i>
+									<em>消息中心</em>
+								</a>
+								<a href="#">
+									<i></i>
+									<em>我的体验</em>
+								</a>
+								<a href="profile.html">
+									<i></i>
+									<em>个人设置</em>
+								</a>
+								<a class="unlogin" href="javascript:;">
+									<i></i>
+									<em>退出</em>
+								</a>
+							</div>
+						</span>
+						<a class="weilauch_exper launch_exper">发起体验</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--核心部分-->
+		<div class="bgf7">
+			<div class="w1150 bbs_Release">
+				<div class="edit_wid" style="position:relative;">
+					<div class="edit_tit">
+						<h3>
+							我要发帖<i></i>
+						</h3>
+					</div>
+					<div class="edit_box clear">
+						<div class="edit_con_tit">
+							<input type="text" name="shareTitle" id="shareTitle" maxlength="30" placeholder="在此键入标题" value="">
+						</div>
+						<div class="bbs_writeTags">
+							<div class="tagsTextarea">
+														<label class="ztag">点击添加相关标签，用空格分离  (最多3个)</label>
+														<input type="text" maxlength="20" class="taginput">
+							</div>
+							<div class="bbs_hotTag" id="usedTag">
+								<i></i>热门标签：
+								<a data-cnt="1">生活</a><a data-cnt="1">自然</a><a data-cnt="1">情感</a><a data-cnt="1">南锣鼓巷</a><a data-cnt="1">木作</a>					</div>
+							<script type="text/javascript">
+							$(function(){
+								$("#usedTag a").click(function(){
+									var tagCnt=$(".token").size();
+									$(".ztag").hide();
+									if(tagCnt<3){
+										$(".taginput").before('<span class="token">'+$(this).text()+'</span>');
+									}
+									updateDraftInfo();
+								});
+								$(".tagsTextarea").on('click',function(){
+									$(".ztag").hide();
+									$(".taginput").focus();
+								});
+								$(".ztag").on('click',function(){
+									$(this).hide();
+									$(".taginput").focus();
+								});
+								tagInput();
+							});
+							function tagInput(){
+								$(".taginput").focusin(function(){
+									$(".ztag").hide();
+								});
+								$(".taginput").focusout(function(){
+									var tagValue=$(this).val();
+									var tags=$(this).siblings(".token").length;
+									if (tagValue.length==0 && tags==0){
+										$(".ztag").show();
+									}
+								});
+								$(".taginput").keydown(function(event){
+									var tagCnt=$(this).siblings(".token").length;
+									var tagValue=$(this).val().replace(/\s*/,'');
+									var sigPos=$(this).position();
+									if(tagCnt>0 && event.keyCode == 8 && sigPos == 0){
+										$(this).prev(".token").remove();
+										updateDraftInfo();
+									}
+									if(tagCnt>0 && event.keyCode == 8 && sigPos == 1){
+										$(this).prev(".token").remove();
+										updateDraftInfo();
+									}
+									if (tagCnt>=3){
+										$(this).val('');
+										return false;
+									}
+									if(tagValue.length>8){
+										tagValue=tagValue.substring(0,8);
+									}
+									if(tagCnt<3 && event.keyCode == 32 && tagValue != ''){
+										$(this).before('<span class="token">'+tagValue+'</span>').val('');
+										updateDraftInfo();
+									}
+								});
+							}
+							</script>
+						</div>
+						<div id="edit_note" class="edit_note" style="display: none;">
+							这里是待萌共同的精神家园，请我们一起守护。
+							<br>待着鼓励你：分享私人体验经历、“待着的方法”、想和待萌讨论的生活话题。
+							<br>待着不欢迎：广告、违法内容、与“待着生活方式”无关的内容。
+							<br>高质量、多图文的帖子待着会官方推荐，反之则会下沉甚至删除。
+						</div>
+						<div class="ke-container ke-container-daizhe" style="width: 848px;"><div style="display: block; position: fixed; width: 848px; top: 0px; left: 207.5px;" class="ke-toolbar" unselectable="on">
+							<span class="ke-outline" data-name="bold" title="粗体(Ctrl+B)" unselectable="on">
+								<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-bold" unselectable="on"></span>
+							</span>
+							<span class="ke-outline" data-name="italic" title="斜体(Ctrl+I)" unselectable="on">
+								<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-italic" unselectable="on"></span></span>
+								<span class="ke-outline" data-name="underline" title="下划线(Ctrl+U)" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-underline" unselectable="on"></span>
+								</span>
+								<span class="ke-outline" data-name="justifyleft" title="左对齐" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-justifyleft" unselectable="on"></span>
+								</span>
+								<span class="ke-outline" data-name="justifycenter" title="居中" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-justifycenter" unselectable="on"></span>
+								</span>
+								<span class="ke-outline" data-name="justifyright" title="右对齐" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-justifyright" unselectable="on"></span>
+								</span>
+								<span class="ke-outline" data-name="insertunorderedlist" title="项目符号" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-insertunorderedlist" unselectable="on"></span>
+								</span>
+								<span class="ke-outline" data-name="insertorderedlist" title="编号" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-insertorderedlist" unselectable="on"></span>
+								</span>
+								<span class="ke-outline" data-name="multiimage" title="批量图片上传" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-multiimage" unselectable="on"></span>
+								</span>
+								<span class="ke-outline" data-name="networkvideo" title="网络视频" unselectable="on">
+									<span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-networkvideo" unselectable="on"></span>
+								</span>
+						</div>
+						<div style="display: block; height: 736px;" class="ke-edit">
+							<iframe class="ke-edit-iframe" hidefocus="true" frameborder="0" tabindex="" style="width: 100%; height: 736px;"></iframe><textarea class="ke-edit-textarea" hidefocus="true" tabindex="" style="width: 100%; height: 736px; display: none;"></textarea></div><div class="ke-statusbar"><span class="ke-inline-block ke-statusbar-center-icon"></span><span class="ke-inline-block ke-statusbar-right-icon" style="visibility: hidden;"></span></div></div><textarea name="shareContent" id="shareContent" class="edit_con" style="display: none;">&lt;ul&gt;
+							&lt;li style="text-align:left;"&gt;
+								&lt;span style="line-height:1.5;"&gt;&lt;u&gt;&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/u&gt;&lt;/span&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;</textarea>
+					</div>
+					<div class="clear">
+						<div class="save_box">
+							<div class="savedOk" style="display: none;">已保存</div>
+						</div>
+						<div class="edit_share">
+												<input type="hidden" value="70ce8a3432ef40b19637dbed7d605ef2" id="create_token">
+							<input type="button" value="保存" class="issue2">
+							<input type="button" value="发布" class="issue" id="last_submit">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--回到顶部-->
+		<ul class="scoll">
+			<li class="Provide"><a href="#"></a></li>
+			<li class="Feedback"><a href="#"></a></li>
+			<li class="backToTop"></li>
+		</ul>
+		<!--尾部-->
+		<div id="ft">
+			<ul>
+				<li>
+					<h5>
+						关于我们
+						<br>
+						<em>ABOUT　US</em>
+					</h5>
+					<p>
+						<a href="#">关于待着</a>
+					</p>
+					<p>
+						<a href="#">加入我们</a>
+					</p>
+					<p>
+						<a href="#">联系我们</a>
+					</p>
+					<p>
+						<a href="#">媒体报道</a>
+					</p>
+					<p>
+						<a href="#">商业合作</a>
+					</p>
+					<p>
+						<a href="#">Cooperation</a>
+					</p>
+				</li>
+				<li>
+					<h5>
+						帮助中心
+						<br>
+						<em>HELP</em>
+					</h5>
+					<p>
+						<a href="#">玩转待着</a>
+					</p>
+					<p>
+						<a href="#">建议反馈</a>
+					</p>
+					<p>
+						<a href="#">申请认证</a>
+					</p>
+				</li>
+				<li>
+					<h5>
+						关于体验
+						<br>
+						<em>EXPERIENCE</em>
+					</h5>
+					<p>
+						<a href="#">为何免费</a>
+					</p>
+					<p>
+						<a href="#">是否有黑幕</a>
+					</p>
+					<p>
+						<a href="#">何为体验官</a>
+					</p>
+					<p>
+						<a href="#">体验官如何产生</a>
+					</p>
+					<p>
+						<a href="#">商业合作</a>
+					</p>
+					<p>
+						<a href="#">活动视频</a>
+					</p>
+				</li>
+				<li>
+					<h5>
+						网站条款
+						<br>
+						<em>SITE TERMS</em>
+					</h5>
+					<p>
+						<a href="#">会员条款</a>
+					</p>
+					<p>
+						<a href="#">版权声明</a>
+					</p>
+				</li>
+				<li class="last">
+					<a href="#" class="sina">待着公众微博</a>
+					<a href="#" class="weixin">待着公众微信</a>
+					<img src="../img/daizhe_code_n.png"/>
+				</li>
+			</ul>
+			<p class="copyright">
+				copyright 2014 daizhe.cn All right reserved
+				<a href="#">京ICP备102157719号-5</a>
+			</p>
+		</div>
+	</body>
+</html>

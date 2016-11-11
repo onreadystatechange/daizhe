@@ -1,0 +1,540 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+.container {
+	background: #eaeaea url(../img/person_bg.jpg) no-repeat top center;
+}
+.inner {
+	width: 1150px;
+	margin: 0 auto;
+}
+.inner .user-info {
+	width: 100%;
+	height: 265px;
+	padding-top: 85px;
+	color: #fff;
+}
+.inner .user-info .head-img {
+	width: 126px;
+	height: 126px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../img/person_headimgbg.png) center center no-repeat;
+}
+.inner .user-info .head-img img {
+	margin: 16px 0 0 18px;
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	position: relative;
+    top: 16px;
+}
+.inner .user-info .user-name {
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	font-family: "宋体";
+	font-weight: 600;
+}
+.inner .user-info .user-word {
+	text-align: center;
+	width: 100%;
+}
+.inner .ads-user {
+	width: 100%;
+	margin: 17px 0;
+}
+.inner .pre_main {
+	width: 100%;
+	padding-bottom: 80px;
+}
+.inner .pre_main .main_left {
+	width: 793px;
+	float: left;
+}
+.inner .release-wrapper {
+	width: 100%;
+	margin-bottom: 16px;
+	background-color: #fff;
+}
+.inner .release-wrapper .release {
+	padding: 45px 35px 20px 35px;
+}
+.inner .release-wrapper .release .status {
+	margin-top: 15px;
+	color: #959595;
+	font-size: 16px;
+}
+.inner .release-wrapper .release .status .status_1 {
+	margin-right: 18px;
+}
+.inner .release-wrapper .release .status .status_1 a,
+.inner .release-wrapper .release .status .status_2 a {
+	color: #959595;
+}
+.inner .release-wrapper .release .status .status_1:hover .r1 {
+	background-position: -30px 0;
+}
+.inner .release-wrapper .release .status .status_2:hover .r3 {
+	background-position: -30px -44px;
+}
+.inner .release-wrapper .release .status .status_1 .r1 {
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	background: url(../img/person_icos.png) 0px 0px no-repeat;
+	position: relative;
+	top: 4px;
+}
+.inner .release-wrapper .release .status .status_2 .r3 {
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	background: url(../img/person_icos.png) 0px -44px no-repeat;
+	position: relative;
+	top: 4px;
+}
+.inner .release-wrapper .release .postingBox {
+	margin-top: 11px;
+	display: block;/******************************************************************************************/
+}
+.inner .release-wrapper .release .postingBox textarea {
+	width: 696px;
+	border: 1px solid #e6e6e6;
+	height: 31px;
+	padding: 7px 10px 0 13px;
+	border-radius: 2px;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	color: #bfbfbf;
+}
+.inner .release-wrapper .release .postingBox input {
+    margin: 20px 0px 0px 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100px;
+    height: 40px;
+    background: #50c8d7;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: inset 0 0 2px #45afbc;
+    float: right;
+    border: none 0;
+}
+.inner .release-wrapper .release .postingBox input:hover {
+	background-color: #72D8E5;
+}
+.postingBox2 {
+	margin-top: 11px;
+	position: relative;
+	display: none;
+}
+.postingBox2 .posting-inner {
+	height: 99px;
+	padding: 7px 10px 0 13px;
+	border: 1px solid #e6e6e6;
+	background-color: #f2f2f2;
+}
+.postingBox2 .posting-inner textarea {
+	width: 690px;
+	height: 65px;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #3d3d3d;
+	background-color: #f2f2f2;
+	border: none 0;
+}
+.postingBox2 > textarea {
+	width: 713px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 4px;
+	border-top: none 0;
+	border-color: #E6E6E6;
+	text-indent: .5em;
+}
+.postingBox2 .file {
+	position: absolute;
+    left: 10px;
+    top: 80px;
+    width: 54px;
+    opacity: 0;
+    z-index: 1;
+}
+.postingBox2 .load-img {
+	position: absolute;
+    left: 10px;
+    top: 80px;
+    width: 54px;
+    z-index: 0;
+    font-size: 12px;
+    color: #959595;
+}
+.postingBox2 .load-mv {
+	position: absolute;
+    left: 75px;
+    top: 80px;
+    width: 54px;
+    font-size: 12px;
+    color: #959595;
+    cursor: pointer;
+}
+.postingBox2 .load-mv:hover .load-mv-i {
+	background-position: -261px -30px;
+}
+.postingBox2 .load-mv .load-mv-i {
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	width: 19px;
+	height: 14px;
+	background: url(../img/icos.png) -261px 0px no-repeat;
+}
+.postingBox2 .load-img:hover .load-img-i {
+	background-position: -224px -30px;
+}
+.postingBox2 .load-img i {
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	width: 19px;
+	height: 14px;
+	background: url(../img/icos.png) -224px 0 no-repeat;
+}
+
+.postingBox2 > .clearfix input{
+    margin: 0px 0px 0px 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100px;
+    height: 40px;
+    background: #50c8d7;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: inset 0 0 2px #45afbc;
+    border: 0 none;
+    float: right;
+    margin-top: 15px;
+}
+.postingBox2 > .clearfix input:hover {
+	background-color: #72D8E5;
+}
+.postingBox2 .hide-box {
+	width: 547px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 4px 0px #aaa;
+    border-radius: 5px;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 108px;
+    background-color: #fff;
+    display: none;
+}
+.postingBox2 .hide-box .hide-arrow {
+	display: block;
+	width: 23px;
+	height: 11px;
+	background: url(../img/states_san.png) 0px 0px no-repeat;
+	position: absolute;
+	top: -11px;
+	left: 95px;
+}
+.postingBox2 .hide-box .hotTag {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #535353;
+}
+.postingBox2 .hide-box .hotTag input {
+	color: #fff;
+	background-color: #50C8D7;
+	border: none 0;
+	padding: 2px 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	float: right;
+	width: 44px;
+	height: 20px;
+	line-height: 10px;
+	text-align: center;
+	font-size: 10px;
+}
+.postingBox2 .hide-box .hotTag a {
+	color: #999999;
+	float: right;
+	margin: 1px 10px 0px 0px;
+	font-size: 10px;
+}
+.postingBox2 .hide-box textarea {
+	background-color: #F2F2F2;
+	border: none 0;
+	width: 548px;
+	height: 35px;
+	line-height: 35px;
+	text-indent: .5em;
+}
+.main_leftConcrete {
+	width: 736px;
+	padding: 0px 29px 0px 29px;
+	box-shadow: 0 0 4px #c7c5c5;
+	background-color: #fff;
+}
+.main_leftConcrete .menu {
+	border-bottom: 1px solid #efefef;
+	background: #fff;
+	padding: 44px 6px 14px 0px;
+	position: relative;
+}
+.main_leftConcrete .menu a {
+	font-size: 16px;
+	color: #535353;
+	display: inline-block;
+	margin-right: 62px;
+}
+.main_leftConcrete .menu a.on {
+	color: #50C8D7;
+}
+.main_leftConcrete .menu a:hover {
+	text-decoration: underline;
+}
+.main_right {
+	width: 265px;
+	padding: 43px 38px;
+	background: #f2f2f2;
+	box-shadow: 0 0 4px #c7c5c5;
+	float: right;
+}
+.main_right h1 {
+	font-size: 30px;
+	color: #a0a0a0;
+	text-align: right;
+}
+.main_right h1 i {
+	color: #535353;
+}
+.main_right .block1 {
+	font-size: 14px;
+	color: #535353;
+	padding: 34px 0px 15px 0px;
+}
+.main_right .block1 a {
+	float: right;
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+.main_right .line_ge {
+	border-top: 1px solid #f6f7f8;
+	border-bottom: 1px solid #fafbfb;
+	background: #dedede;
+	height: 1px;
+}
+.main_right .block2 {
+	font-size: 14px;
+	color: #a0a0a0;
+	padding: 28px 0px 17px 0px;
+}
+.main_right .block2 p {
+	font-size: 18px;
+}
+.main_right .block2 p a,
+.main_right .block3 p a {
+	float: right;
+	color: #A0A0A0;
+	text-decoration: underline;
+	font-size: 14px;
+}
+.main_right .block2 p:nth-child(2){
+	font-size: 14px;
+	padding-top: 7px;
+}
+.main_right .block3 {
+	font-size: 14px;
+	color: #a0a0a0;
+	padding: 28px 0px 17px 0px;
+}
+.main_right .block2 p:nth-child(1),
+.main_right .block3 p:nth-child(1) {
+	font-size: 18px;
+	color: #2F2F2F;
+}
+.main_right .block3 p:nth-child(2){
+	font-size: 14px;
+	padding-top: 7px;
+}
+.main_right .fansBox {
+	margin-top: 26px;
+}
+.main_right .fansBox .fans {
+	margin-top: 14px;
+}
+.main_right .fansBox .fans .attention {
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 86px;
+	height: 75px;
+	border: 1px solid #eee;
+	background: #fbfbfb;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
+}
+.main_right .fansBox .fans .attention:hover {
+	background-color: #fff;
+}
+.main_right .fansBox .fans .attention span {
+	display: block;
+	padding-top: 12px;
+	font-size: 24px;
+	color: #000;
+	font-family: "Century Gothic";
+}
+.main_right .fansBox .fans .attention em {
+	display: block;
+	font-size: 13px;
+	color: #737373;
+	padding-top: 1px;
+}
+.publishMain {
+	padding: 47px 29px 0 29px;
+	background-color: #fff;
+}
+.publishMain .modelInfo {
+	margin-bottom: 6px;
+}
+.publishMain .modelInfo .modelInfo-left {
+	float: left;
+}
+.publishMain .modelInfo .modelInfo-left img {
+	width: 46px;
+	height: 46px;
+	border-radius: 100px;
+	box-shadow: 1px 1px 1px #C2C2C4;
+}
+.publishMain .modelInfo .modelInfo-right {
+	float: left;
+	width: 660px;
+	margin-left: 29px;
+	position: relative;
+	border-bottom: 1px dotted #e3e3e3;
+	padding-bottom: 24px;
+}
+.publishMain .modelInfo .modelInfo-right h3 {
+	font-size: 15px;
+	color: #535353;
+	margin-top: 14px;
+}
+.publishMain .modelInfo .modelInfo-right h3 a {
+	color: #A0A2A5;
+}
+.publishMain .modelInfo .modelInfo-right h3 a:hover {
+	text-decoration: underline;
+}
+.publishMain .modelInfo .modelInfo-right h3 time {
+    font-size: 12px;
+    color: #959595;
+    float: right;
+}
+.publishMain .modelInfo .modelInfo-right .box {
+	padding: 14px 0px 15px 16px;
+	margin-top: 15px;
+	background: #f8f9fa;
+	position: relative;
+}
+.box .text .p-t {
+    padding: 0px 0px 30px 38px;
+    width: 562px;
+    line-height: 18px;
+    word-wrap: break-word;
+    color: #707070;
+    margin-top: 13px;
+}
+.box .text .p-t i:nth-child(1) {
+	width: 11px;
+	height: 12px;
+	background: url(../img/person_icos.png) 0px -70px no-repeat;
+	display: inline-block;
+	position: absolute;
+	left: 35px;
+	top: 15px;
+}
+.box .text .p-t i:nth-child(2) {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/person_icos.png) -19px -70px no-repeat;
+}
+.main_left .publishMain {
+	display: none;
+}
+.main_left .publishMain.show {
+	display: block;
+}
+.main_left .publishMain.status p {
+	font-size: 18px;
+	font-weight: 600;
+}
+.main_left .publishMain.status p span {
+	font-size: 12px;
+	color: #535353;
+	float: right;
+	font-weight: normal;
+}
+.main_left .publishMain {
+	padding-bottom: 60px;
+}
+.main_left .publishMain .exp_head a.active {
+	color: #50C8D7;
+}
+.main_left .publishMain .exp_head a {
+	margin-right: 32px;
+}
+.main_left .publishMain .exp_head a:nth-child(1) i{
+	width: 10px;
+	height: 5px;
+	display: inline-block;
+	background: url(../img/arrows3.png) no-repeat;
+	position: relative;
+	top: -2px;
+	left: 8px;
+}
+.main_left .publishMain .exp_head a:not(.active):hover {
+	text-decoration: underline;
+}
+.main_left .publishMain.tie p {
+	font-size: 18px;
+	font-weight: 600;
+}
+.main_left .publishMain.tie p span {
+	font-size: 12px;
+	color: #535353;
+	float: right;
+	font-weight: normal;
+}
+.main_left .publishMain.hobby .hobby_head > span {
+	margin-right: 30px;
+}
+.main_left .publishMain.hobby .hobby_head .like {
+	font-size: 18px;
+	font-weight: 600;
+}
+.main_left .publishMain.hobby .hobby_head .show {
+	display: inline-block;
+	padding: 0 10px;
+	background-color: #50C8D7;
+	color: #fff;
+	border-radius: 15px;
+}
+.main_left .publishMain.hobby .hobby_head span:nth-child(2):hover,
+.main_left .publishMain.hobby .hobby_head span:nth-child(3):hover {
+	text-decoration: underline;
+	cursor: pointer;
+}

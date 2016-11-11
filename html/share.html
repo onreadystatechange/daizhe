@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>社区</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="../css/share.css" />
+		<link rel="stylesheet" href="../css/based.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="hd3">
+			<div class="head clearfix">
+				<div class="h_left">
+					<a href="javascript:;">
+						<div class="newLogo"></div>
+					</a>
+					<ul class="nav">
+						<li class="btn_track">
+							<a href="../index.html">首页</a>
+						</li>
+						<li class="btn_track">
+							<a href="experience.html">体验</a>
+						</li>
+						<li class="btn_track">
+							<a href="share.html" class="on">社区</a>
+						</li>
+						<li class="btn_track">
+							<a href="status.html">状态</a>
+						</li>
+						<li class="btn_track">
+							<a href="lifestyle.html">待法</a>
+						</li>
+						<li class="client">
+							<a href="app.html" >待着客户端
+							<span class="add_two_newnew">New</span>
+							</a>
+							<div class="nav_appDown clearfix">
+								<div class="nav_appbox">
+									<div class="nav_arrow"></div>
+									<div class="nav_contentbg"></div>
+								</div>
+								<div class="nav_content">
+									<div class="nav_appicon clearfix">
+										<img src="../img/nav_appicon.png"/>
+										<P>
+											做无用之事
+											<br>
+											享受无所事事的快乐
+										</P>
+									</div>
+									<div class="nav_applink clearfix">
+										<div class="link">
+											<a href="#" style="padding: 0;">
+												<img src="../img/btn_appstore.png"/>
+											</a>
+											<a href="#" style="padding: 0;margin-top: 8px;">
+												<img src="../img/btn_appstore.png"/>
+											</a>
+										</div>
+										<div class="qrcode">
+											<img src="../img/81897d03fc0a1bb99193fb65631068b8_5_1.png" style="width: 88px;height: 88px;"/>
+											<p>扫码直接下载</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="search_box clearfix">
+					<div class="search_frame fl">
+						<form action="/search" method="GET" onsubmit="return checkHeadSearch();">
+							<div class="search_frameLeft">
+								<input type="text" class="text sear" placeholder="Search" name="k" />
+							</div>
+							<input type="" class="searBtn" id="search_in">
+						</form>
+					</div>
+					<div class="user_box2 fl">
+						<span class="notlogin">
+							<a class="fl mod_login">登录</a>
+							<div class="search_line fl"></div>
+							<a class="fl mod_regis">注册</a>
+						</span>
+						<span class="islogin">
+							<div class="search_line fl"></div>
+							<img class="head_img" src="../img/Vestman.png" alt="">
+							<span class="u_name">余家俊</span>
+							<i class="icon"></i>
+							<div class="hide_box">
+								<a href="user.html">
+									<i></i>
+									<em>个人主页</em>
+								</a>
+								<a href="message.html">
+									<i></i>
+									<em>消息中心</em>
+								</a>
+								<a href="#">
+									<i></i>
+									<em>我的体验</em>
+								</a>
+								<a href="profile.html">
+									<i></i>
+									<em>个人设置</em>
+								</a>
+								<a class="unlogin" href="javascript:;">
+									<i></i>
+									<em>退出</em>
+								</a>
+							</div>
+						</span>
+						<a class="weilauch_exper launch_exper">发起体验</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框部分-->
+		<div class="loginpop_bottom_box">
+			<div class="bomBox">
+				<span class="foot_text"></span>
+				<a href="register.html" class="a_style weixin">
+					<i></i>
+					微信注册
+				</a>
+				<a href="register.html" class="a_style weibo">
+					<i></i>
+					微博注册
+				</a>
+				<a href="register.html" class="a_style qq">
+					<i></i>
+					QQ注册
+				</a>
+				<a href="register.html" class="a_style zc">
+					<i></i>
+					手机注册
+				</a>
+			</div>
+			<a href="javascript:;" class="close"></a>
+		</div>
+		<!--核心部分-->
+		<div class="bbsBodyBg">
+			
+			<section class="w1000">
+				<article class="com-title"></article>
+				<article class="com-banner">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide"><a href="javaScript:;"><img src="../img/shareBanner/20151218103844644.jpg"/></a></div>
+					        <div class="swiper-slide"><a href="javaScript:;"><img src="../img/shareBanner/20151218183314830.jpg"/></a></div>
+					    	<div class="swiper-slide"><a href="javaScript:;"><img src="../img/shareBanner/20151218183331308.jpg"/></a></div>
+					    	<div class="swiper-slide"><a href="javaScript:;"><img src="../img/shareBanner/20151218183435372.jpg"/></a></div>
+					    </div>
+					    <div class="swiper-pagination"></div>
+					</div>
+				</article>
+				<article class="com_info clear">
+					<div class="fl Cominfo_left borStyle" style="margin-top:1px;">
+		                <!--大标题-->
+		                <div class="titleBox clear" id="start">
+		                    <ul class="clear comTitle">
+		                        <li class="on"><a href="/share">全部</a></li>
+		                        <!--<li ><a href="/share/index/type/6#start">话题</a></li>-->
+		                        <li><a href="javaScript:;">官方活动</a></li>
+		                        <li><a href="javaScript:;">体验报告</a></li>
+		                        <li><a href="javaScript:;">少数人· 生活访谈</a></li>
+		                    </ul>
+		                </div>
+		                <div class="clear"></div>
+		                <div class="hothing">
+		                    <div class="tagCur">
+		                        <a href="javaScript:;" class="on">最新</a>
+		                        <a href="javaScript:;">热门</a>
+		                        <a href="javaScript:;">精华</a>
+		                    </div>
+		                </div>
+		            
+		             	<!--列表内容-->
+		                <div class="bbsList">
+		                  <ul class="bbsList_ul">
+		                    <li class="clear">
+		                    	<div class="fl touHead allHeadImg">
+		                    		<a href="javaScript:;"">
+		                    			<img src="http://img1.daizhe.cn/user/20150828/0/20150828103233826_100_100.png"
+		                    				 data-original="http://img1.daizhe.cn/user/20150828/0/20150828103233826_100_100.png" 
+		                    				 class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+		                    			<div class="model_imgFloat"><span class="f_san"></span>
+		                    				<h4>
+		                    					<a href="javaScript:;" class="name">kkm</a>
+		                    					<a class="model_title model_t2 communityTitle" href="javaScript:;">
+		                    						<i class="showName"><span class="name">第735期体验官</span><span class="g_san"></span></i>
+		                    					</a>
+		                    				</h4>
+		                    				<p>如能忘掉渴望 岁月长 衣裳薄</p>
+		                    				<div class="likeMe like_109464">
+		                    					<a href="javaScript:;" class="attention" data-uid="109464" data-followta="0" data-followme="0">
+		                    					<i></i>关注</a>	
+		                    						<!--关注-->
+		                    				</div>
+		                    			</div>
+		                    	</div>
+		                    	<div class="fl bbsmainRight">
+		                    		<h3>
+		                    			<a href="javaScript:;">孤独图书馆——把自己藏起来，有时是为了被寻找。</a>
+		                    		</h3>
+		                    		<div class="nameTime">
+		                    			<a href="javaScript:;" class="b_name">kkm</a>
+		                    			<a class="model_title model_t2 communityTitle" href="javaScript:;">
+		                    			<i class="showName">
+		                    				<span class="name">第735期体验官</span>
+		                    				<span class="g_san"></span>
+		                    			</i>
+		                    			</a>
+		                    				<span class="b_time">2016-01-13</span>
+		                    		</div>
+		                    		<div class="main_haveImg">
+		                    			<div class="clear">
+		                    				<a href="javaScript:;">
+		                    					<img src="http://cache1.daizhe.cn/share/20160113/3/20160113005434279_176_112.jpg" 
+		                    						data-original="http://cache1.daizhe.cn/share/20160113/3/20160113005434279_176_112.jpg"
+		                    						class="fl bbsImg lazyLoad" style="display: block;">
+		                    				</a>
+		                    				<div class="fr bbsText_in">
+		                    				<p><a href="javaScript:;">我又躲起来了不好的恶习习惯性的躲起来小学不想上学就逃课去我家旁边的大烟囱旁坐一上午看著他冒白煙中学做不出数学题来就跑到阳台把头伸到夜空里看星星 耳机里循環听...</a></p>
+		                    				</div>
+		                    			</div>
+		                    		</div>
+		                    		<div class="clear bbsTagesIcos">
+		                    			<div class="fr b_icos">
+		                    				<i class="i1">2564</i>
+		                    				<i class="i2">58</i>
+		                    				<i class="i3">64</i>
+		                    			</div>
+		                    		</div>
+		                    	</div>
+	                    </li>
+	                    <li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/1103393924/FED80F6F6A337B93F83FDB6B3773C7EC/100" data-original="http://q.qlogo.cn/qqapp/1103393924/FED80F6F6A337B93F83FDB6B3773C7EC/100" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">(]^ω^[)喵-</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_190759">
+										<a href="javascript:;" class="attention" data-uid="190759" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">无聊</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">(]^ω^[)喵-</a><span class="b_time">2016-10-07</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">无聊是一种状态，也是一种心态</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">29</i><i class="i2">1</i><i class="i3">1</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160802/9/20160802111159477_100_100.png" data-original="http://img1.daizhe.cn/user/20160802/9/20160802111159477_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">杨同学</a></h4>
+									<p>得不到的都释怀</p>
+									<div class="likeMe like_57020">
+										<a href="javascript:;" class="attention" data-uid="57020" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">碎碎念</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">杨同学</a><span class="b_time">2016-10-06</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">谈了恋爱跟没谈一样 只是多了一个发微信的人 多了份念想 其实还不如自己一个人来得实在 自由 很不喜欢这种 远在天边的感觉 一切的事情都感觉在演独角戏 没有任何意义 也改变不了什么 或许终有一日会习惯于这种习惯 亦或许终有一日会厌倦这种习惯 一切都取决于自己的内心吧 太在乎才会如此依赖 太喜欢才会想念 故事的结局是喜是悲...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">164</i><i class="i2">0</i><i class="i3">4</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20161009/1/20161009021942906_100_100.png" data-original="http://img1.daizhe.cn/user/20161009/1/20161009021942906_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">半个地球外还有个你</a></h4>
+									<p>&nbsp;总有一天你会站在最高的地方活成自己曾经渴望的模样</p>
+									<div class="likeMe like_189821">
+										<a href="javascript:;" class="attention" data-uid="189821" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">你不是最好的，却是我履历表里不可缺少的一部分</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">半个地球外还有个你</a><span class="b_time">2016-10-09</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">我，一个永远三分钟热度的人。却爱了你很久。 你，一个永远温暖的人。却再也不会回来了。 2015年3月，我们恋爱了，那时的我还是大一的小学妹，而你都是大三的学长了。想来是很遥远的距离。然而在学校安排的实习中，我有幸认识了你。 你是温暖的人，将我从泥泞中拯救出来。我喜欢你的性格，喜欢你的幽默，喜欢的笑。还喜欢你帅气的脸。大...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">208</i><i class="i2">0</i><i class="i3">5</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160221/5/20160221165157893_100_100.png" data-original="http://img1.daizhe.cn/user/20160221/5/20160221165157893_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">阿怪同学</a></h4>
+									<p>一个重度精分患者的自言自语</p>
+									<div class="likeMe like_162891">
+										<a href="javascript:;" class="attention" data-uid="162891" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">人心可畏</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">阿怪同学</a><span class="b_time">2016-10-07</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">夜深，一个人，以前的夜深我都是看着喜剧综艺过的，这个夜晚突然压抑不住自己，憋在心里真的太难受，这种感觉真的不希望在有了，一个七八年好的就差穿一条裤子的好闺密，会偷我的钱，会在我相亲的饭桌上在我和男生都互相有好感的时候公开表示对我相亲对象表示喜欢，我无法忍受和闺密同时对一个男生有瓜葛，然后在我跟相亲男掰了时候，转身和前对...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">306</i><i class="i2">2</i><i class="i3">11</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://tva3.sinaimg.cn/crop.0.0.200.200.180/d563de24jw8efl2n7z4wuj205k05k0sl.jpg" data-original="http://tva3.sinaimg.cn/crop.0.0.200.200.180/d563de24jw8efl2n7z4wuj205k05k0sl.jpg" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">死的啦死基</a></h4>
+									<p>不希望回顾以前的自己。</p>
+									<div class="likeMe like_191077">
+										<a href="javascript:;" class="attention" data-uid="191077" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">wo。 。。。记得你的谎言</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">死的啦死基</a><span class="b_time">2016-10-12</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">我记得你对我说的谎言。。。只是谎言，我以为是真心话。。。。。我死的时候你会陪着我吗！你说了:会。青春，一杯酒，留下酒的回味，留不住它的散去，留下酒的存在，留不住它的失去。</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">22</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/1103393924/FC499A756392097D0D5E9702D84440B1/100" data-original="http://q.qlogo.cn/qqapp/1103393924/FC499A756392097D0D5E9702D84440B1/100" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">三曰</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_183801">
+										<a href="javascript:;" class="attention" data-uid="183801" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">那个又爱又恨的男人应该是等不到了</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">三曰</a><span class="b_time">2016-10-12</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">认识5年了。我们总是在吵架，每天都在。真正在一起的日子不超过一年。我都不知道我们算什么。16岁在一起。现在20了。暑假他找了我一个月被我拒绝了。后来没联系了。发现还是很喜欢他。我也不知道該不该去找他。又怕他会不理我。哎</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fl b_tags"><span class="tags_ico"></span>
+										<a href="javaScript:;">情感</a>
+									</div>
+									<div class="fr b_icos"><i class="i1">33</i><i class="i2">0</i><i class="i3">2</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/1103393924/F4AE4641646D9741B5F6688B89BD59AB/100" data-original="http://q.qlogo.cn/qqapp/1103393924/F4AE4641646D9741B5F6688B89BD59AB/100" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">_Skies•</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_125867">
+										<a href="javascript:;" class="attention" data-uid="125867" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">我们都在错过</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">_Skies•</a><span class="b_time">2016-10-12</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">无论你遇见谁，他都是对的人；无论发生什么事，那都是唯一会发生的事；已经结束的，已经结束了。</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">11</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://tva3.sinaimg.cn/crop.0.0.200.200.180/d563de24jw8efl2n7z4wuj205k05k0sl.jpg" data-original="http://tva3.sinaimg.cn/crop.0.0.200.200.180/d563de24jw8efl2n7z4wuj205k05k0sl.jpg" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">死的啦死基</a></h4>
+									<p>不希望回顾以前的自己。</p>
+									<div class="likeMe like_191077">
+										<a href="javascript:;" class="attention" data-uid="191077" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">错过</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">死的啦死基</a><span class="b_time">2016-10-12</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">错过真是可怕，可怕的让人心疼，后悔，后悔自己为什么没有牢牢抓住，后悔自己明明说不定可以改变，却不想改变，觉得变了就不再是自己，总觉得不想为谁变的不像原来的自己。心疼，心疼自己的青春，心疼自己抓不到彼此的瞬间。</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">27</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20161011/1/20161011170627587_100_100.png" data-original="http://img1.daizhe.cn/user/20161011/1/20161011170627587_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">蓝色风信子</a></h4>
+									<p>寻找心的归属</p>
+									<div class="likeMe like_191024">
+										<a href="javascript:;" class="attention" data-uid="191024" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">早上好</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">蓝色风信子</a><span class="b_time">2016-10-12</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">一大早起来，头晕晕的，没睡够，好想再睡，可是还有工作要做，慢慢做吧，开心面对你，早上好</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">8</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160807/5/20160807185638652_100_100.png" data-original="http://img1.daizhe.cn/user/20160807/5/20160807185638652_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">丁面线</a></h4>
+									<p>英雄梦想</p>
+									<div class="likeMe like_87430">
+										<a href="javascript:;" class="attention" data-uid="87430" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">陸生133天台灣交換全紀實（with diarie...</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">丁面线</a><span class="b_time">2016-10-07</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<a href="javaScript:;"><img src="http://cache1.daizhe.cn/share/20161007/2/20161007013219974_176_112.jpg" data-original="http://cache1.daizhe.cn/share/20161007/2/20161007013219974_176_112.jpg" class="fl bbsImg lazyLoad" style="display: block;"></a>
+										<div class="fr bbsText_in">
+											<p>
+												<a href="javaScript:;">我是北外英語系的少年，自2016.9.6來到台灣輔仁大學開始為期133天的交換之行。如果你對當代台灣有興趣，又想學英語，歡迎來這篇帖子看看喔～不定時更新，期...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">202</i><i class="i2">0</i><i class="i3">3</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160807/5/20160807185638652_100_100.png" data-original="http://img1.daizhe.cn/user/20160807/5/20160807185638652_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">丁面线</a></h4>
+									<p>英雄梦想</p>
+									<div class="likeMe like_87430">
+										<a href="javascript:;" class="attention" data-uid="87430" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">陸生133天台灣交換全紀實（English Dia...</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">丁面线</a><span class="b_time">2016-10-12</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<a href="javaScript:;"><img src="http://cache1.daizhe.cn/share/20161011/1/20161011221728615_176_112.jpg" data-original="http://cache1.daizhe.cn/share/20161011/1/20161011221728615_176_112.jpg" class="fl bbsImg lazyLoad" style="display: block;"></a>
+										<div class="fr bbsText_in">
+											<p>
+												<a href="javaScript:;"> 我是北外英語系的少年，自2016.9.6來到台灣輔仁大學開始為期133天的交換之行。 如果你對當代台灣有興趣，又想學英語，歡迎來這篇帖子看看喔～ 如果你對...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fl b_tags"><span class="tags_ico"></span>
+										<a href="javaScript:;">交換生</a>
+										<a href="javaScript:;">北外</a>
+										<a href="javaScript:;">台灣</a>
+									</div>
+									<div class="fr b_icos"><i class="i1">53</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/1103393924/98AF0354103BD1C94A9D50345E7F5C17/100" data-original="http://q.qlogo.cn/qqapp/1103393924/98AF0354103BD1C94A9D50345E7F5C17/100" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">磬亓.</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_191063">
+										<a href="javascript:;" class="attention" data-uid="191063" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">我来的晚吗？</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">磬亓.</a><span class="b_time">2016-10-11</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">不，我以后会随时都在。</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">14</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/1103393924/98AF0354103BD1C94A9D50345E7F5C17/100" data-original="http://q.qlogo.cn/qqapp/1103393924/98AF0354103BD1C94A9D50345E7F5C17/100" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">磬亓.</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_191063">
+										<a href="javascript:;" class="attention" data-uid="191063" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">我比他差吗</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">磬亓.</a><span class="b_time">2016-10-11</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="/share/detail/id/19217" target="_blank">我想比他过的好，不过一时气愤。</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">11</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/100554815/33C580C24B97A05F2BDFFC5930D57A44/100" data-original="http://q.qlogo.cn/qqapp/100554815/33C580C24B97A05F2BDFFC5930D57A44/100" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">小马驹</a><a class="model_title model_t2 communityTitle" href="/passport/certified" target="_blank"><i class="showName"><span class="name">第979期体验官</span><span class="g_san"></span></i></a></h4>
+									<p>我不吃素我行我素 AB型天蝎</p>
+									<div class="likeMe like_24935">
+										<a href="javascript:;" class="attention" data-uid="24935" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">从Note7到banana</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">小马驹</a>
+									<a class="model_title model_t2 communityTitle" href="/passport/certified" target="_blank"><i class="showName"><span class="name">第979期体验官</span><span class="g_san"></span></i></a><span class="b_time">2016-10-11</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<a href="javaScript:;"><img src="http://cache1.daizhe.cn/share/20161011/2/20161011165912462_176_112.jpg" data-original="http://cache1.daizhe.cn/share/20161011/2/20161011165912462_176_112.jpg" class="fl bbsImg lazyLoad" style="display: block;"></a>
+										<div class="fr bbsText_in">
+											<p>
+												<a href="javaScript:;"> 世上本没有路，走的人多了，静静地想一想，全是套路——小马驹 兄弟，你可瞅准了——你拿的不是手机，是手雷啊！在国庆假期密集的新闻里，CCTV不遗余力地连续报...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">86</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/100554815/33C580C24B97A05F2BDFFC5930D57A44/100" data-original="http://q.qlogo.cn/qqapp/100554815/33C580C24B97A05F2BDFFC5930D57A44/100" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">小马驹</a><a class="model_title model_t2 communityTitle" href="/passport/certified" target="_blank"><i class="showName"><span class="name">第979期体验官</span><span class="g_san"></span></i></a></h4>
+									<p>我不吃素我行我素 AB型天蝎</p>
+									<div class="likeMe like_24935">
+										<a href="javascript:;" class="attention" data-uid="24935" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">躁不动的工体</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">小马驹</a>
+									<a class="model_title model_t2 communityTitle" href="/passport/certified" target="_blank"><i class="showName"><span class="name">第979期体验官</span><span class="g_san"></span></i></a><span class="b_time">2016-10-11</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<a href="javaScript:;"><img src="http://cache1.daizhe.cn/share/20161001/4/20161001030038762_176_112.jpg" data-original="http://cache1.daizhe.cn/share/20161001/4/20161001030038762_176_112.jpg" class="fl bbsImg lazyLoad" style="display: block;"></a>
+										<div class="fr bbsText_in">
+											<p>
+												<a href="javaScript:;"> 人不服老不行，崔健——“滚动三十 2016北京演唱会”，老崔真的滚不动了！廉颇老矣尚能饭否？能吃饭，但真唱不动啦！不是唱不动啦，是你的歌声不能再次把人们感...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">62</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20161010/3/20161010131945820_100_100.png" data-original="http://img1.daizhe.cn/user/20161010/3/20161010131945820_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">GANJINg</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_190881">
+										<a href="javascript:;" class="attention" data-uid="190881" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">这世界好人多吗</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">GANJINg</a><span class="b_time">2016-10-11</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<a href="javaScript:;"><img src="http://cache1.daizhe.cn/share/20161011/1/20161011120338613_176_112.jpg" data-original="http://cache1.daizhe.cn/share/20161011/1/20161011120338613_176_112.jpg" class="fl bbsImg lazyLoad" style="display: block;"></a>
+										<div class="fr bbsText_in">
+											<p>
+												<a href="javaScript:;">这世界没有好人错这世界有好人错这世界全是利益路边上出个小故障hh 你不该出 算了 我对这城市有爱我对这世界有爱有好人 碰不见 没毛病</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">62</i><i class="i2">0</i><i class="i3">0</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20161007/3/20161007010301539_100_100.png" data-original="http://img1.daizhe.cn/user/20161007/3/20161007010301539_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">萌萌哒的梭梭</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_190480">
+										<a href="javascript:;" class="attention" data-uid="190480" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">与忙碌世界告别的每一秒</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">萌萌哒的梭梭</a><span class="b_time">2016-10-05</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">在每天清晨起来的时候记得看看那个干净的世界，望一眼或朝阳或蓝天又或者那落下的雨滴。在马路上急急忙忙走过的时候，停下来看看路边或者嬉戏吵闹的孩子或者谈笑风生的恋人又或者飞驰而过的汽车。好像自己就是某某电影里各种情节的一部分看见银杏树的时候我总会记起高中校园里那秋风吹过的片片金黄自己随之而去的当时懵懂而又青涩的我们。坐在公...</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">169</i><i class="i2">2</i><i class="i3">9</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20150926/7/20150926221749153_100_100.png" data-original="http://img1.daizhe.cn/user/20150926/7/20150926221749153_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">青盲</a></h4>
+									<p>自己的路自己走完，没人能一直陪你走到最后</p>
+									<div class="likeMe like_118935">
+										<a href="javascript:;" class="attention" data-uid="118935" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">留下你的名字，我来帮你写一些文字</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">青盲</a><span class="b_time">2015-12-14</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">可能没有文采，但是我想试一试。</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">1355</i><i class="i2">11</i><i class="i3">217</i></div>
+								</div>
+							</div>
+						</li>
+						<li class="clear">
+							<div class="fl touHead allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160920/0/20160920141109907_100_100.png" data-original="http://img1.daizhe.cn/user/20160920/0/20160920141109907_100_100.png" class="bbsHeadImg lazyLoad" style="display: inline;"></a>
+								<div class="model_imgFloat"><span class="f_san"></span>
+									<h4><a href="javaScript:;" class="name">Seven7</a></h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_183325">
+										<a href="javascript:;" class="attention" data-uid="183325" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</div>
+							<div class="fl bbsmainRight">
+								<h3><a href="javaScript:;">换一座城市 我不敢随便下车</a></h3>
+								<div class="nameTime">
+									<a href="javaScript:;" class="b_name">Seven7</a><span class="b_time">2016-10-03</span></div>
+								<div class="main_haveImg">
+									<div class="clear">
+										<div class="bbsText_in_no">
+											<p>
+												<a href="javaScript:;">在熟悉的城市坐公交我敢看哪儿有兴趣就下车哪怕我不知道这里哪怕我是个大路痴可是 我敢随便下车现在现在我真的好怕乘错了车好怕下错了站不敢随便对于我这种看不懂地图的人来说走偏了路 真的会不知所措我想这就是有恃无恐吧有所依靠才会无所畏惧</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="clear bbsTagesIcos">
+									<div class="fr b_icos"><i class="i1">206</i><i class="i2">3</i><i class="i3">2</i></div>
+								</div>
+							</div>
+						</li>
+						</ul>
+		                <!--分页-->
+		                    <div class="pages">	
+		                        <div class="pages">
+		                            <div id="yw0" class="pages"><a class="hidden" href="javaScript:;">&lt;&lt;</a>
+										<a class="hidden" href="javaScript:;">&lt;</a>
+										<a class="on" href="javaScript:;">1</a>
+										<a href="javaScript:;">2</a>
+										<a href="javaScript:;">3</a>
+										<a href="javaScript:;">4</a>
+										<a href="javaScript:;">5</a>
+										<a href="javaScript:;">6</a>
+										<a href="javaScript:;">7</a>
+										<a href="javaScript:;">8</a>
+										<a href="javaScript:;">9</a>
+										<a href="javaScript:;">10</a>
+										<a href="javaScript:;">&gt;</a>
+										<a href="javaScript:;">&gt;&gt;</a></div>		
+		                        </div>
+		                    </div>
+		                </div>
+          		  </div>
+          		  <!--left-end-->
+			          		<div class="fr Cominfo_right">
+				<div class="fabu">
+					<a href="fabu.html" class="fbBtn"><i></i>发布新帖</a>
+				</div>	
+				<div class="Cominfo_right_info borStyle" style="margin-top:15px;">
+			
+					<!--热门标签-->
+					<div class="hotTags">
+						<div class="tit">
+							<h3>热门标签</h3></div>
+						<div class="tagsList clear">
+							<a data-cnt="1" href="javaScript:;">北外</a>
+							<a data-cnt="1" href="javaScript:;">交換生</a>
+							<a data-cnt="1" href="javaScript:;">小狗</a>
+							<a data-cnt="1" href="javaScript:;">生活</a>
+							<a data-cnt="1" href="javaScript:;">自然</a>
+							<a data-cnt="1" href="javaScript:;">情感</a>
+							<a data-cnt="1" href="javaScript:;">南锣鼓巷</a>
+							<a data-cnt="1" href="javaScript:;">木作</a>
+						</div>
+					</div>
+			
+					<div class="lineDiv"></div>
+			
+					<!--广告位-->
+					<div class="bbsA_ad">
+						<div class="h10"></div>
+						<div id="ads-share_index_right_ad1" style="margin-bottom:30px;">
+							<a href="javaScript:;"><img src="http://img1.daizhe.cn/upload/20151218/8/20151218184027901.jpg" width="260" border="0"></a>
+						</div>
+						<div class="h20"></div>
+					</div>
+			
+					<!--热门用户-->
+					<div class="hotUser">
+						<div class="tit">
+							<h3>热门用户</h3>
+						</div>
+						<!--热门用户添加鼠标效果-->
+						<ul class="userList clear">
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160927/5/20160927222747695_100_100.png"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">JavaOne</a>
+													                                    </h4>
+									<p>Java &amp; One 、雉儿如此</p>
+									<div class="likeMe like_137286">
+										<a href="javascript:;" class="attention" data-uid="137286" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160930/6/20160930101916281_100_100.png"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">痞子0601</a>
+													                                    </h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_190202">
+										<a href="javascript:;" class="attention" data-uid="190202" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20161007/3/20161007010301539_100_100.png"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">萌萌哒的梭梭</a>
+													                                    </h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_190480">
+										<a href="javascript:;" class="attention" data-uid="190480" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160221/5/20160221165157893_100_100.png"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">阿怪同学</a>
+													                                    </h4>
+									<p>一个重度精分患者的自言自语</p>
+									<div class="likeMe like_162891">
+										<a href="javascript:;" class="attention" data-uid="162891" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://q.qlogo.cn/qqapp/100554815/33C580C24B97A05F2BDFFC5930D57A44/100"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">小马驹</a>
+													<a class="model_title model_t2 communityTitle" href="/passport/certified" target="_blank"><i class="showName"><span class="name">第979期体验官</span><span class="g_san"></span></i></a>                                    </h4>
+									<p>我不吃素我行我素 AB型天蝎</p>
+									<div class="likeMe like_24935">
+										<a href="javascript:;" class="attention" data-uid="24935" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20160921/9/20160921152909532_100_100.png"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">皮蛋君。</a>
+													                                    </h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_188223">
+										<a href="javascript:;" class="attention" data-uid="188223" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20161006/1/20161006081050281_100_100.png"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">蔡攸酉</a>
+													                                    </h4>
+									<p>TA的签名还在环游世界 过两天就来</p>
+									<div class="likeMe like_185851">
+										<a href="javascript:;" class="attention" data-uid="185851" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+							<li class="allHeadImg">
+								<a href="javaScript:;"><img src="http://img1.daizhe.cn/user/20161009/1/20161009021942906_100_100.png"></a>
+								<!--个人信息浮动框-->
+								<div class="model_imgFloat">
+									<span class="f_san"></span>
+									<h4>
+			                                        <a href="javaScript:;" class="name">半个地球外还有个你</a>
+													                                    </h4>
+									<p>&nbsp;总有一天你会站在最高的地方活成自己曾经渴望的模样</p>
+									<div class="likeMe like_189821">
+										<a href="javascript:;" class="attention" data-uid="189821" data-followta="0" data-followme="0"><i></i>关注</a>
+										<!--关注-->
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+			
+					<div class="lineDiv"></div>
+			
+					<!--热门帖子-->
+					<div class="experienceReport">
+						<h4>
+			                            热门帖子
+			                        </h4>
+						<ul class="reportList">
+							<li>
+								<div class="right_textno">
+									<i class="one"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">那个我依然爱的你。</a>
+									<!--<a href="/user/191165" class="fl r_name">渊博的被遗落...</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="two"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">我的妹妹</a>
+									<!--<a href="/user/189521" class="fl r_name">小飞碟</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="three"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">一个源于父爱，充满爱与温柔的手...</a>
+									<!--<a href="/user/191151" class="fl r_name">悦小天</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="normal"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">那个又爱又恨的男人应该是等不到...</a>
+									<!--<a href="/user/183801" class="fl r_name">三曰</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="normal"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">不再是未成年</a>
+									<!--<a href="/user/183325" class="fl r_name">Seven7</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="normal"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">丽江</a>
+									<!--<a href="/user/191000" class="fl r_name">大叔爱大婶</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="normal"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">人心可畏</a>
+									<!--<a href="/user/162891" class="fl r_name">阿怪同学</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="normal"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">wo。 。。。记得你的谎言</a>
+									<!--<a href="/user/191077" class="fl r_name">死的啦死基</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="normal"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">我们都在错过</a>
+									<!--<a href="/user/125867" class="fl r_name">_Skies...</a>-->
+								</div>
+							</li>
+							<li>
+								<div class="right_textno">
+									<i class="normal"></i>
+									<!--<i class="two"></i>
+			                                    <i class="three"></i>
+			                                    <i class="normal"></i>-->
+									<a href="javaScript:;" class="h_txt">错过</a>
+									<!--<a href="/user/191077" class="fl r_name">死的啦死基</a>-->
+								</div>
+							</li>
+						</ul>
+					</div>
+			
+					<!--广告图->
+			                    <div class="com_ad"><a href="http://www.daizhe.cn/share/detail/id/1866" target="_blank"><img src="http://img1.daizhe.cn/upload/20141103/5/20141103100755664.jpg" class="com_adScroll" /></a></div>-->
+			
+				</div>
+			
+			</div>
+				</article>
+			</section>
+			<!--尾部-->
+		<!--回到顶部-->
+	<ul class="scoll">
+		<li class="Provide"><a href="#"></a></li>
+		<li class="Feedback"><a href="#"></a></li>
+		<li class="backToTop"></li>
+	</ul>
+	<!--模态框部分-->
+	<div class="loginpop_bottom_box">
+		<div class="bomBox">
+			<span class="foot_text"></span>
+			<a href="#" class="a_style weixin">
+				<i></i>
+				微信注册
+			</a>
+			<a href="#" class="a_style weibo">
+				<i></i>
+				微博注册
+			</a>
+			<a href="#" class="a_style qq">
+				<i></i>
+				QQ注册
+			</a>
+			<a href="#" class="a_style zc">
+				<i></i>
+				手机注册
+			</a>
+		</div>
+		<a href="javascript:;" class="close"></a>
+	</div>
+	<!--尾部-->
+	<div id="ft">
+		<ul>
+			<li>
+				<h5>
+					关于我们
+					<br>
+					<em>ABOUT　US</em>
+				</h5>
+				<p>
+					<a href="#">关于待着</a>
+				</p>
+				<p>
+					<a href="#">加入我们</a>
+				</p>
+				<p>
+					<a href="#">联系我们</a>
+				</p>
+				<p>
+					<a href="#">媒体报道</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">Cooperation</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					帮助中心
+					<br>
+					<em>HELP</em>
+				</h5>
+				<p>
+					<a href="#">玩转待着</a>
+				</p>
+				<p>
+					<a href="#">建议反馈</a>
+				</p>
+				<p>
+					<a href="#">申请认证</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					关于体验
+					<br>
+					<em>EXPERIENCE</em>
+				</h5>
+				<p>
+					<a href="#">为何免费</a>
+				</p>
+				<p>
+					<a href="#">是否有黑幕</a>
+				</p>
+				<p>
+					<a href="#">何为体验官</a>
+				</p>
+				<p>
+					<a href="#">体验官如何产生</a>
+				</p>
+				<p>
+					<a href="#">商业合作</a>
+				</p>
+				<p>
+					<a href="#">活动视频</a>
+				</p>
+			</li>
+			<li>
+				<h5>
+					网站条款
+					<br>
+					<em>SITE TERMS</em>
+				</h5>
+				<p>
+					<a href="#">会员条款</a>
+				</p>
+				<p>
+					<a href="#">版权声明</a>
+				</p>
+			</li>
+			<li class="last">
+				<a href="#" class="sina">待着公众微博</a>
+				<a href="#" class="weixin">待着公众微信</a>
+				<img src="../img/daizhe_code_n.png"/>
+			</li>
+		</ul>
+		<p class="copyright">
+			copyright 2014 daizhe.cn All right reserved
+			<a href="#">京ICP备102157719号-5</a>
+		</p>
+	</div>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="../js/swiper.jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/share.js" ></script>
+		<script type="text/javascript" src="../js/based.js" ></script>
+	</body>
+</html>
