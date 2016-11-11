@@ -32,6 +32,9 @@
   opacity: 0.5;
   -moz-opacity: 0.5;
 }
+#common_ajax_loading img{
+	display:inline-block;
+}
 #common_ajax_mask {
   display: none;
   position: fixed;
