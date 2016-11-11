@@ -34,6 +34,8 @@
 }
 #common_ajax_loading img{
 	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
 }
 #common_ajax_mask {
   display: none;
